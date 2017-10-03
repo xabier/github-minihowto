@@ -119,7 +119,7 @@ $ git checkout -b NOMBRE_RAMA
 
 Y para subir (empujar, push) la rama al repositorio remoto hacemos:
 
-```
+```shell
 $ git push origin NOMBRE_RAMA
 ```
 
