@@ -52,7 +52,7 @@ $ retext howto.es.md
 Realizas cambios (por ejemplo puedes añadir tu nombre al final del archivo), los guardas con el editor y luego avisas a git de que ha realizado cambios en ese archivo:
 
 ```shell
-$ git add README.md
+$ git add howto.es.md
 ```
 
 Si has modificado varios documentos puedes añadir todos a la vez con:
@@ -64,10 +64,10 @@ $ git add *
 Con esto lo que hemos conseguido es añadir los cambios al Index o Staging, que es, como el nombre indica, el índice de los archivos modificados, pero aún no hemos "guardado" esos cambios. Para eso tenemos que realizar un commit:
 
 ```shell
-$ git commit -m "Mensaje de cambios"
+$ git commit -m "He añadido mi nombre en la lista"
 ```
 
-El "Mensaje de cambios" es el mensaje con el que se guardarán dichos cambios explicando a terceros cual es, en resumen, la aportación o modificaciones que has realizado.
+El texto entrecomillado es el mensaje con el que se guardarán dichos cambios explicando a terceros cual es, en resumen, la aportación o modificaciones que has realizado.
 
 
 ## Actualizar cambios en el servidor remoto
