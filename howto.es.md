@@ -4,15 +4,21 @@
 ## En Master
 
 ```shell
-$ git pull origin master
-$ git add *
-$ git commit -m "update"
-$ git push origin master
+$ git pull origin master    # actualizar el repositorio
+$ git add *                 # añadir docs modificados a Staging
+$ git commit -m "update"    # guardar cambios de los docs modificados
+$ git push origin master    # subir los cambios al repositorio master
 ```
 
 ## En Branch
 
-
+```shell
+$ git pull origin RAMA      # actualizar el repositorio
+$ git checkout -b RAMA      # entrar en la rama
+$ git add *                 # añadir docs modificados a Staging
+$ git commit -m "update"    # guardar cambios de los docs modificados
+$ git push origin RAMA      # subir los cambios al repositorio master
+```
 
 # Paso a paso
 
@@ -27,7 +33,7 @@ $ sudo apt-get install retext
 
 `Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
 
-Si no la tiene aún [create una cuenta github](https://github.com/join?source=login).
+Si no la tiene aún [create una cuenta en github](https://github.com/join?source=login).
 
 ## Configurar git
 
