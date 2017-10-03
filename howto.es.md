@@ -123,12 +123,18 @@ Y para subir (empujar, push) la rama al repositorio remoto hacemos:
 $ git push origin NOMBRE_RAMA
 ```
 
-Ahora si quieres fusionar tu rama con la maestra
+Ahora si quieres fusionar tu rama con la maestra. Primero tendras que cambiar a la rama maestra:
 
 ```shell
-$ git merge NOMBRE_RAMA
+$ git checkout master
 ```
 
+Y desde aquí ya puedes fusionar (merge) la rama nueva a la rama maestra:
+
+```shell
+$ git checkout master
+$ git merge NOMBRE_RAMA
+```
 
 Para no acumular ramas es recomendable borrarlas una vez esten completadas:
 
