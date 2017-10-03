@@ -17,7 +17,9 @@ $ git pull origin RAMA      # actualizar el repositorio
 $ git checkout -b RAMA      # entrar en la rama
 $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
-$ git push origin RAMA      # subir los cambios al repositorio master
+$ git push origin RAMA      # subir los cambios al repositorio externo
+$ git branch -d NOMBRE_RAMA # borrar rama
+
 ```
 
 # Paso a paso
