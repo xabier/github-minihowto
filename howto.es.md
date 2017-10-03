@@ -41,6 +41,7 @@ $ sudo apt-get install retext
 
 Si no la tiene aún [create una cuenta en github](https://github.com/join?source=login).
 
+
 ## Configurar git
 
 Usa tu nombre de usuario de GitHub para configurar la autoría de tus cambios:
@@ -138,15 +139,10 @@ $ git branch -d NOMBRE_RAMA
 
 ## Actualizar tus repositorios locales
 
-Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local
-
-
-
+Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local.
 
 ```shell
-
-```
-```
+$ git pull origin master
 ```
 
 
@@ -159,7 +155,7 @@ Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio 
 
 * Markdown 
 	* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-	*
+	* https://daringfireball.net/projects/markdown/syntax
 * Github
     * https://guides.github.com/activities/hello-world/
 * Git and Github
