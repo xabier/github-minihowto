@@ -71,6 +71,12 @@ Si vas a crear un repositorio nuevo en github. Primero lo creas con un nombre es
 $ git init NOMBRE_PROYECTO
 ```
 
+También puedes hacer un fork (una copia) de un repositorio en GitHub y luego clonar esa copia en Github a tu repositorio local:
+
+```shell
+$ git clone https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto
+```
+Sustituyendo tu TU_NOMBRE_DE_USUARIO por tu nombre de usuario en Github.
 
 ## Editar archivos y realizar cambios
 
