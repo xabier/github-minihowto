@@ -96,6 +96,8 @@ Para actualizar directamente a master hacemos:
 $ git push origin master
 ```
 
+La propia línea de comandos te pedirá tu nombre de usuario y tu password en github.
+
 Si en lugar de actualizar los cambios directamente en master queremos crear una rama, actualizar y sólo posteriormente fusionar o actualizar los cambios en la rama maestra (master), entonces, primero tenemos que crear una rama:
 
 ```shell
