@@ -1,4 +1,20 @@
 
+# Superfast
+
+## En Master
+
+```shell
+$ git pull origin master
+$ git add *
+$ git commit -m "update"
+$ git push origin master
+```
+
+## En Branch
+
+
+
+# Paso a paso
 
 ## Instalar git
 
@@ -10,6 +26,8 @@ $ sudo apt-get install retext
 ```
 
 Retext nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
+
+Si no lo has hecho ya create un usuario en github.
 
 ## Configurar git
 
@@ -75,7 +93,7 @@ El texto entrecomillado es el mensaje con el que se guardarán dichos cambios ex
 Para actualizar directamente a master hacemos:
 
 ```shell
-git push origin master
+$ git push origin master
 ```
 
 Si en lugar de actualizar los cambios directamente en master queremos crear una rama, actualizar y sólo posteriormente fusionar o actualizar los cambios en la rama maestra (master), entonces, primero tenemos que crear una rama:
@@ -118,10 +136,6 @@ Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio 
 
 
 
-git add  Identidad-censo-privacidad-poder.md 
-git commit -m "nueva versión (o lo que sea)" 
-git push origin master
-
 # Personas que están aprendido con este tutorial
 
 * Xabier
@@ -130,6 +144,9 @@ git push origin master
 
 * Markdown 
 	* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+	*
+* Github
+    * https://guides.github.com/activities/hello-world/
 * Git and Github
 	* https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 	* https://rogerdudler.github.io/git-guide/
