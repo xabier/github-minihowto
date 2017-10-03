@@ -25,9 +25,9 @@ $ sudo apt-get install git-all
 $ sudo apt-get install retext
 ```
 
-Retext nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
+`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
 
-Si no lo has hecho ya create un usuario en github.
+Si no la tiene aún [create una cuenta github](https://github.com/join?source=login).
 
 ## Configurar git
 
