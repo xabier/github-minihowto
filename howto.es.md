@@ -4,7 +4,8 @@
 ## En Master
 
 ```shell
-$ git pull origin master    # actualizar el repositorio
+$ git clone URL             # clonar un repositorio remoto en local
+$ git pull origin master    # actualizar el repositorio local con el remoto
 $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
@@ -14,10 +15,13 @@ $ git push origin master    # subir los cambios al repositorio master
 
 ```shell
 $ git pull origin RAMA      # actualizar el repositorio
-$ git checkout -b RAMA      # entrar en la rama
+$ git checkout -b RAMA      # crear y entrar en la rama
 $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin RAMA      # subir los cambios al repositorio externo
+                            # esto permite hacer un PR en GitHub
+$ git checkout master       # cambiar a master
+$ git merge RAMA            # actualizar master con los cambios de la rama
 $ git branch -d NOMBRE_RAMA # borrar rama
 
 ```
@@ -139,7 +143,8 @@ Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio 
 
 
 
-```
+```shell
+
 ```
 ```
 ```
@@ -160,4 +165,5 @@ Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio 
 * Git and Github
 	* https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 	* https://rogerdudler.github.io/git-guide/
+	* https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
 
