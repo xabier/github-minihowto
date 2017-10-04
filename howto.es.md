@@ -20,10 +20,6 @@ $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin RAMA      # subir los cambios al repositorio externo
                             # esto permite hacer un PR en GitHub
-$ git checkout master       # cambiar a master
-$ git merge RAMA            # actualizar master con los cambios de la rama
-$ git branch -d NOMBRE_RAMA # borrar rama
-
 ```
 
 # Paso a paso
@@ -134,24 +130,7 @@ Y para subir (empujar, push) la rama al repositorio remoto hacemos:
 $ git push origin NOMBRE_RAMA
 ```
 
-Ahora si quieres fusionar tu rama con la maestra. Primero tendras que cambiar a la rama maestra:
-
-```shell
-$ git checkout master
-```
-
-Y desde aquí ya puedes fusionar (merge) la rama nueva a la rama maestra:
-
-```shell
-$ git checkout master
-$ git merge NOMBRE_RAMA
-```
-
-Para no acumular ramas es recomendable borrarlas una vez esten completadas:
-
-```shell
-$ git branch -d NOMBRE_RAMA
-```
+A partir de aquí lo recomendable es proponer un Pull Request en GitHub. Para esto te vas al repositorio y sigues las instrucciones que hay en la pestaña Pull Request con el botón de New Pull Request
 
 
 ## Actualizar tus repositorios locales
