@@ -1,7 +1,20 @@
 
 # Superfast
 
-## En Master
+
+## En Brach y fork sin acceso a repositorio
+
+```shell
+                            # PRIMERO: crear fork del respositorio
+$ git clone URL_FORK        # clonar un repositorio remoto en local
+$ git pull origin master    # actualizar el repositorio local con el remoto
+$ git add *                 # añadir docs modificados a Staging
+$ git commit -m "update"    # guardar cambios de los docs modificados
+$ git push origin master    # subir los cambios al repositorio master
+```
+
+
+## En Master con Acceso a Master
 
 ```shell
 $ git clone URL             # clonar un repositorio remoto en local
@@ -11,7 +24,7 @@ $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
 ```
 
-## En Branch
+## En Branch con acceso al repositorio
 
 ```shell
 $ git pull origin RAMA      # actualizar el repositorio
@@ -25,6 +38,8 @@ $ git merge RAMA            # actualizar master con los cambios de la rama
 $ git branch -d NOMBRE_RAMA # borrar rama
 
 ```
+
+
 
 # Paso a paso
 
@@ -56,36 +71,26 @@ Define una dirección de correo electrónico:
 $ git config --global user.email "TU_CORREO_ELECTRONICO"
 ```
 
+## Forkear y clonar este repositorio
 
-## Crear o clonar repositorios
+Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin nada que clonar tampoco es fácil. Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Vamos a empezar comprendiendo los pasos que vamos a dar:
 
-Para clonar y descargarse un repositorio en github:
-
-```shell
-$ git clone https://github.com/xabier/github-minihowto
-```
-
-Si vas a crear un repositorio nuevo en github. Primero lo creas con un nombre específico en GitHub y luego, o bien lo clonas como antes o te creas uno en local
-
-```shell
-$ git init NOMBRE_PROYECTO
-```
-
-También puedes hacer un fork (una copia) de un repositorio en GitHub: 
+1. Vas a crear un fork de este repositorio, un fork es una copia con la que podrás trabajar directamente, ya que este fork o copia será tuya, y en tus propio repositorio no tienes que pedir permiso. 
 
 ![Hacer un fork de este proyecto](img/fork.png)
 
-Luego clonar esa copia en Github a tu repositorio local:
+2. Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar para ello harás
 
 ```shell
 $ git clone https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto
 ```
 
-Sustituyendo tu TU_NOMBRE_DE_USUARIO por tu nombre de usuario en Github.
+Sustituyendo tu ```TU_NOMBRE_DE_USUARIO``` por tu nombre de usuario en Github.
+
 
 ## Editar archivos y realizar cambios
 
-Vas a la carpeta que tienes en local y editas un documento cualquier, por ejemplo el `README.md` con tu editor favorito
+Vas a la carpeta que tienes en local y editas un documento cualquiera, por ejemplo 
 
 ```shell
 $ retext howto.es.md
@@ -114,13 +119,25 @@ El texto entrecomillado es el mensaje con el que se guardarán dichos cambios ex
 
 ## Actualizar cambios en el servidor remoto
 
-Para actualizar directamente a master hacemos:
+Lo que queremos hacer ahora es empujar (push) nuestros cambios en local (en nuestro ordenador) a la rama maestra (master) que está en nuestro repositorio forkeado en github, para eso hacemos:
 
 ```shell
 $ git push origin master
 ```
 
 La propia línea de comandos te pedirá tu nombre de usuario y tu password en github.
+
+Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado.
+
+
+## Tu primer Pull Request
+
+Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork.
+
+FALTA
+
+
+## Trabajar en Ramas
 
 Si en lugar de actualizar los cambios directamente en master queremos crear una rama, actualizar y sólo posteriormente fusionar o actualizar los cambios en la rama maestra (master), entonces, primero tenemos que crear una rama:
 
