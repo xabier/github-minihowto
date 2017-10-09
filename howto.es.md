@@ -71,6 +71,13 @@ Define una dirección de correo electrónico:
 $ git config --global user.email "TU_CORREO_ELECTRONICO"
 ```
 
+Ahora vamos a crear una carpeta donde vamos a almacenar todos los repositorios con los que trabajemos a partir de ahora, para crearla directamente en la home:
+
+```shell
+$ cd                    # Volver a Home
+$ mkdir repos-git       # crear directorio o carpeta "repos-git"
+```
+
 ## Forkear y clonar este repositorio
 
 Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin nada que clonar tampoco es fácil. Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Vamos a empezar comprendiendo los pasos que vamos a dar:
@@ -82,10 +89,19 @@ Empezar con este repositorio no es tan fácil como empezar de cero porque este r
 2. Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar para ello harás
 
 ```shell
+$ cd ~/repos-git        # con esto nos movemos a nuestra carpeta de repositorios
 $ git clone https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto
 ```
 
-Sustituyendo tu ```TU_NOMBRE_DE_USUARIO``` por tu nombre de usuario en Github.
+Sustituyendo tu ```TU_NOMBRE_DE_USUARIO``` por tu nombre de usuario en Github. Ahora podrás comprobar que en la carpeta ```repos-git``` tienes ya la carpeta o directorio en el que has descargado el repositorio remoto
+
+```shell
+$ ls                    # lista los directorios que hay
+                        # verás que aparece github-minihowto
+$ cd github-minihowto   # para moverse a la nueva carpeta
+```
+
+Ya estamos preparadas para editar archivos y contribuir.
 
 
 ## Editar archivos y realizar cambios
