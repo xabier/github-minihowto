@@ -2,7 +2,7 @@
 # Superfast
 
 
-## En Brach y fork sin acceso a repositorio
+## En Branch y Fork sin acceso a repositorio original
 
 ```shell
                             # PRIMERO: crear fork del respositorio
@@ -11,10 +11,11 @@ $ git pull origin master    # actualizar el repositorio local con el remoto
 $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
+                            # Solicitar PR al repo original
 ```
 
 
-## En Master con Acceso a Master
+## En Master con acceso al repositorio original con permisos en Master
 
 ```shell
 $ git clone URL             # clonar un repositorio remoto en local
@@ -24,7 +25,7 @@ $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
 ```
 
-## En Branch con acceso al repositorio
+## En Branch con acceso al repositorio original sin permisos en Master
 
 ```shell
 $ git pull origin RAMA      # actualizar el repositorio
