@@ -55,7 +55,7 @@ $ sudo apt-get install retext
 
 `Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
 
-Si no la tiene aún [create una cuenta en github](https://github.com/join?source=login).
+Si no la tienes aún [create una cuenta en github](https://github.com/join?source=login).
 
 
 ## Configurar git
@@ -200,7 +200,7 @@ $ git pull origin master
 
 # Personas que están aprendido con este tutorial
 
-* Xabier
+* Xabier, Carolina
 
 # References
 
