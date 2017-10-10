@@ -1,4 +1,13 @@
 
+
+# Índice
+
+* [Superfast](#Superfast)  
+* [Paso a Paso](#paso-a-paso)
+    * [Instalar git](#instalar-git)
+    * [Configurar git](#configurar-git)
+    * [Forkear y clonar este repositorio](#forkear-y-clonar-este-repositorio)
+
 # Superfast
 
 
