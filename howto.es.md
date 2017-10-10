@@ -7,6 +7,13 @@
     * [Instalar git](#instalar-git)
     * [Configurar git](#configurar-git)
     * [Forkear y clonar este repositorio](#forkear-y-clonar-este-repositorio)
+    * [Editar archivos y realizar cambios](#editar-archivos-y-realizar-cambios)
+    * [Actualizar cambios en el servidor remoto](#actualizar-cambios-en-el-servidor-remoto)
+    * [Tu primer Pull Request](#tu-primer-pull-request)
+    * [Trabajar en Ramas](#trabajar-en-ramas)
+    * [Actualizar tus repositorios locales](#actualizar-tus-repositorios-locales)
+* [Personas que están aprendido con este tutorial](#personas-que-estan-aprendido-con-este-tutorial)
+* [Referencias](#referencias)
 
 # Superfast
 
@@ -211,7 +218,7 @@ $ git pull origin master
 
 * Xabier
 
-# References
+# Referencias
 
 * Markdown 
 	* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
