@@ -2,7 +2,7 @@
 
 # Índice
 
-* [Superfast](#Superfast)  
+* [Superfast](#Superfast)
 * [Paso a Paso](#paso-a-paso)
     * [Instalar git](#instalar-git)
     * [Configurar git](#configurar-git)
@@ -60,13 +60,18 @@ $ git branch -d NOMBRE_RAMA # borrar rama
 
 # Paso a paso
 
+Aquí tienes un esquema de todos los pasos que vamos a ir dando, rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
+
+![Diagrama de flujo y acciones de este tutorial](img/diagram-git-github.png)
+
+
 ## Instalar git
 
 Instala github en Ubuntu con el siguiente comando:
 
 ```shell
-$ sudo apt-get install git-all
-$ sudo apt-get install retext
+$ sudo apt-get install git-all  # Instalar git
+$ sudo apt-get install retext   # Instalar editor Retext
 ```
 
 `Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
@@ -88,7 +93,7 @@ Define una dirección de correo electrónico:
 $ git config --global user.email "TU_CORREO_ELECTRONICO"
 ```
 
-Ahora vamos a crear una carpeta donde vamos a almacenar todos los repositorios con los que trabajemos a partir de ahora, para crearla directamente en la home:
+Ahora creamos una carpeta donde vamos a almacenar todos los repositorios con los que trabajemos a partir de ahora, para crearla directamente en la home:
 
 ```shell
 $ cd                    # Volver a Home
@@ -167,7 +172,7 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork.
 
-FALTA
+
 
 
 ## Trabajar en Ramas
