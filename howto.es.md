@@ -4,14 +4,13 @@
 
 * [Superfast](#Superfast)
 * [Paso a Paso](#paso-a-paso)
-    * [Instalar git](#instalar-git)
-    * [Configurar git](#configurar-git)
-    * [Forkear y clonar este repositorio](#forkear-y-clonar-este-repositorio)
-    * [Editar archivos y realizar cambios](#editar-archivos-y-realizar-cambios)
-    * [Actualizar cambios en el servidor remoto](#actualizar-cambios-en-el-servidor-remoto)
-    * [Tu primer Pull Request](#tu-primer-pull-request)
-    * [Trabajar en Ramas](#trabajar-en-ramas)
-    * [Actualizar tus repositorios locales](#actualizar-tus-repositorios-locales)
+    * [1. Instalar y configurar git y retext y crear cuenta en github](#instalar-git)
+    * [2. Forkear y clonar este repositorio](#forkear-y-clonar-este-repositorio)
+    * [3. Editar archivos y realizar cambios](#editar-archivos-y-realizar-cambios)
+    * [4. Actualizar cambios en el servidor remoto](#actualizar-cambios-en-el-servidor-remoto)
+    * [5. Tu primer Pull Request](#tu-primer-pull-request)
+    * [6. Trabajar en Ramas](#trabajar-en-ramas)
+    * [7. Actualizar tus repositorios locales](#actualizar-tus-repositorios-locales)
 * [Personas que están aprendido con este tutorial](#personas-que-estan-aprendido-con-este-tutorial)
 * [Referencias](#referencias)
 
@@ -60,26 +59,27 @@ $ git branch -d NOMBRE_RAMA # borrar rama
 
 # Paso a paso
 
-Aquí tienes un esquema de todos los pasos que vamos a ir dando, rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
+Aquí tienes un esquema de todos los pasos que vamos a ir dando:
 
 ![Diagrama de flujo y acciones de este tutorial](img/diagram-git-github.png)
 
+No te asustes con la complejidad del diagrama. Iremos paso a paso y al final del tutorial te servirá como referencia para ordenar todas las acciones que vamos a realizar. En el diagrama diferenciamos tres espacios de trabajo: arriba del todo mi ordenador, abajo del todo el tuyo, en medio GitHub, donde diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
 
-## Instalar git
 
-Instala github en Ubuntu con el siguiente comando:
+## 1. Instalar y configurar git y retext y crear cuenta en github
+
+Instala git y retext en Ubuntu con el siguiente comando:
 
 ```shell
 $ sudo apt-get install git-all  # Instalar git
 $ sudo apt-get install retext   # Instalar editor Retext
 ```
 
-`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
+`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano. Lo que permite Retext, a diferencia de otros editores, es ver en tiempo real cómo se formatea Markdown. Para eso tienes que activar la visualización en pantalla partida, a la izquierda verás el código de Markdown y a la derecha cómo queda visualmente. Para ello haz click en el icono siguiente:
+
+![Preview Retext](img/retext-preview.png)
 
 Si no la tiene aún [create una cuenta en github](https://github.com/join?source=login).
-
-
-## Configurar git
 
 Usa tu nombre de usuario de GitHub para configurar la autoría de tus cambios:
 
@@ -100,15 +100,15 @@ $ cd                    # Volver a Home
 $ mkdir repos-git       # crear directorio o carpeta "repos-git"
 ```
 
-## Forkear y clonar este repositorio
+## 2. Forkear y clonar este repositorio
 
-Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin nada que clonar tampoco es fácil. Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Vamos a empezar comprendiendo los pasos que vamos a dar:
+Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin nada que clonar tampoco es fácil. Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Estos son los pasos que vamos a dar:
 
-1. Vas a crear un fork de este repositorio, un fork es una copia con la que podrás trabajar directamente, ya que este fork o copia será tuya, y en tus propio repositorio no tienes que pedir permiso. 
+Vas a crear un fork de este repositorio, un fork es una copia con la que podrás trabajar directamente, ya que este fork o copia será tuya, y en tus propio repositorio no tienes que pedir permiso a  nadie.
 
 ![Hacer un fork de este proyecto](img/fork.png)
 
-2. Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar para ello harás
+Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar para ello harás:
 
 ```shell
 $ cd ~/repos-git        # con esto nos movemos a nuestra carpeta de repositorios
@@ -126,7 +126,7 @@ $ cd github-minihowto   # para moverse a la nueva carpeta
 Ya estamos preparadas para editar archivos y contribuir.
 
 
-## Editar archivos y realizar cambios
+## 3. Editar archivos y realizar cambios
 
 Vas a la carpeta que tienes en local y editas un documento cualquiera, por ejemplo 
 
@@ -155,7 +155,7 @@ $ git commit -m "He añadido mi nombre en la lista"
 El texto entrecomillado es el mensaje con el que se guardarán dichos cambios explicando a terceros cual es, en resumen, la aportación o modificaciones que has realizado.
 
 
-## Actualizar cambios en el servidor remoto
+## 4. Actualizar cambios en el servidor remoto
 
 Lo que queremos hacer ahora es empujar (push) nuestros cambios en local (en nuestro ordenador) a la rama maestra (master) que está en nuestro repositorio forkeado en github, para eso hacemos:
 
@@ -168,14 +168,12 @@ La propia línea de comandos te pedirá tu nombre de usuario y tu password en gi
 Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado.
 
 
-## Tu primer Pull Request
+## 5. Tu primer Pull Request
 
 Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork.
 
 
-
-
-## Trabajar en Ramas
+## 6. Trabajar en Ramas
 
 Si en lugar de actualizar los cambios directamente en master queremos crear una rama, actualizar y sólo posteriormente fusionar o actualizar los cambios en la rama maestra (master), entonces, primero tenemos que crear una rama:
 
@@ -209,7 +207,7 @@ $ git branch -d NOMBRE_RAMA
 ```
 
 
-## Actualizar tus repositorios locales
+## 7. Actualizar tus repositorios locales
 
 Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local.
 
