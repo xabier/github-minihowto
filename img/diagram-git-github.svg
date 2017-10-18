@@ -17,8 +17,8 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="diagram-git-github.svg"
    inkscape:export-filename="/home/s068413/git/github-minihowto/github-minihowto/img/diagram-git-github.png"
-   inkscape:export-xdpi="144"
-   inkscape:export-ydpi="144">
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs4">
     <marker
@@ -543,9 +543,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="585.68745"
-     inkscape:cy="684.09109"
+     inkscape:zoom="0.7"
+     inkscape:cx="474.63871"
+     inkscape:cy="732.46435"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
