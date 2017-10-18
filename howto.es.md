@@ -65,6 +65,10 @@ Aquí tienes un esquema de todos los pasos que vamos a ir dando:
 
 No te asustes con la complejidad del diagrama. Iremos paso a paso y al final del tutorial te servirá como referencia para ordenar todas las acciones que vamos a realizar. En el diagrama diferenciamos tres espacios de trabajo: arriba del todo mi ordenador, abajo del todo el tuyo, en medio GitHub, donde diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
 
+Aunque ahora mismo el diagrama tenga demasiado detalle para ti que acabas de empezar, podemos comenzar a usarlo para comprender la lógica básica de trabajar con Git y con Github. 
+
+La idea fundamental que captura el diagrama es que en Git y en Github trabajamos con repositorios de documentos (que fundamentalmente contienen carpetas y documentos de texto). Para simplicarlo todo imaginemos que sólo hay un documento. Las líneas horizontales representan la historia de de este repositorio (p.e. las diferentes versiones de un documento, cada vez que modificamos algo en un documento se creará una nueva versión y nos deslizamos hacia la derecha en la líneas horizontales). Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora: la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. Después existirá una versión (la última línea, discontínua) que está en tu ordenador cada vez que abras el editor de textos ```retext``` y guardas los cambios realizados. Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio o otro de órden superior. Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama. 
+
 
 ## 1. Instalar y configurar git y retext y crear cuenta en github
 
@@ -75,7 +79,7 @@ $ sudo apt-get install git-all  # Instalar git
 $ sudo apt-get install retext   # Instalar editor Retext
 ```
 
-`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano. Lo que permite Retext, a diferencia de otros editores, es ver en tiempo real cómo se formatea Markdown. Para eso tienes que activar la visualización en pantalla partida, a la izquierda verás el código de Markdown y a la derecha cómo queda visualmente. Para ello haz click en el icono siguiente:
+`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano. Lo que permite Retext, a diferencia de otros editores, es ver en tiempo real cómo se formatea Markdown. Para eso tienes que activar la visualización en pantalla partida, a la izquierda verás el código de Markdown y a la derecha cómo queda visualmente. Para ello haz click en el icono siguiente y activa la opción ```live preview``` que sale cuando le das al botón desplegable:
 
 ![Preview Retext](img/retext-preview.png)
 
@@ -133,6 +137,10 @@ Vas a la carpeta que tienes en local y editas un documento cualquiera, por ejemp
 ```shell
 $ retext howto.es.md
 ```
+
+Deberías de poder ver una imagen similar a esta:
+
+![Imagen de este documento abierto en Retext](img/retext.png)
 
 Realizas cambios (por ejemplo puedes añadir tu nombre al final del archivo), los guardas con el editor y luego avisas a git de que ha realizado cambios en ese archivo:
 
