@@ -178,7 +178,11 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 ## 5. Tu primer Pull Request
 
-Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork.
+Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original. 
+
+A partir de aquí podrás entrarás en una fase de discusión del PR, puede que te pida que hagas más cambios, o corregir errores.
+
+FALTA ESPECIFICAR CÓMO SE ACTUALIZAN LOS CAMBIOS TIRANDO DIRECTAMENTE DE FORK A MASTER.
 
 
 ## 6. Trabajar en Ramas
@@ -222,7 +226,7 @@ Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio 
 ```shell
 $ git pull origin master
 ```
-
+FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en https://help.github.com/articles/syncing-a-fork/
 
 
 # Personas que están aprendido con este tutorial
