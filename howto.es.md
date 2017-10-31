@@ -221,12 +221,21 @@ $ git branch -d NOMBRE_RAMA
 
 ## 7. Actualizar tus repositorios locales
 
-Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local.
+Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local. Con este comando actualizarás tu repositorio local con el repositorio master de github
 
 ```shell
 $ git pull origin master
 ```
-FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en https://help.github.com/articles/syncing-a-fork/
+
+Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 1. actualizar tu fork con el original mio, 2. actualizar tu copia en local con el original
+
+Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local
+
+
+
+FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en:
+1. https://help.github.com/articles/configuring-a-remote-for-a-fork/
+2. https://help.github.com/articles/syncing-a-fork/
 
 
 # Personas que están aprendido con este tutorial
