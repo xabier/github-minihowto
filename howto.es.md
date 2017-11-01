@@ -29,6 +29,8 @@ $ git push origin master    # subir los cambios al repositorio master
                             # Solicitar PR al repo original
 $ git remote -v             # comprobar repositorios remotos declarados
 $ git remote add upstream URL_ORIGINAL # añadir repositorio original 
+$ git fetch upstream        # actualizar los cambios del repo original
+$ git merge upstream/master # con esto fusionamos nuestro master local con el original
 ```
 
 
@@ -272,6 +274,18 @@ upstream https://github.com/xabier/github-minihowto (fetch)
 upstream https://github.com/xabier/github-minihowto (push)
 ```
 
+Ahora vas a actualizar tu repositorio local con el original
+
+```shell
+$ git fetch upstream        # actualizar los cambios del repo original
+```
+
+Pero aún no has fusionado tu repositorio local con las actualizaciones del original. Para ello hacemos:
+
+```shell
+$ git checkout master       # para estar seguros de estar en la rama maestra
+$ git merge upstream/master # con esto fusionamos nuestro master local con el original
+```
 
 
 FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en:
