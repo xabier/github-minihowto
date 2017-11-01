@@ -27,6 +27,8 @@ $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
                             # Solicitar PR al repo original
+$ git remote -v             # comprobar repositorios remotos declarados
+$ git remote add upstream URL_ORIGINAL # añadir repositorio original 
 ```
 
 
@@ -218,8 +220,15 @@ Para no acumular ramas es recomendable borrarlas una vez esten completadas:
 $ git branch -d NOMBRE_RAMA
 ```
 
+Ahora vamos a añadir el repositorio original como upstream:
 
-## 7. Actualizar tus repositorios locales
+```shell
+$ git branch -d NOMBRE_RAMA
+```
+
+
+
+## 7. Actualizar o sincronizar tus repositorios locales
 
 Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local. Con este comando actualizarás tu repositorio local con el repositorio master de github
 
@@ -229,7 +238,39 @@ $ git pull origin master
 
 Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 1. actualizar tu fork con el original mio, 2. actualizar tu copia en local con el original
 
-Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local
+Existen dos vías para resolver este problema: a) hacerlo directamente en local., o, b) primero actualizar o sincronizar tu fork en github y luego descargar en local 
+
+### 7.a. Sincronizar repositorios desde tu PC con git
+
+Primero vamos a incluir el repositorio original (que vamos a llamar ```upstream```) como uno de los repositorios remotos. Ten en cuenta que, hasta ahora desde tu PC, sólo tienes referenciado tu Fork, no mi repositorio original. 
+
+Primero, para comprobar qué repositorios remotos tienes declarados hacemos:
+
+```shell
+$ git remote -v     # comprobar repositorios remotos declarados
+```
+El resultado que te tiene que salir es:
+
+```shell
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (fetch)
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (push)
+```
+
+Ahora metemos el repositorio original como upstream:
+
+```shell
+$ git remote add upstream https://github.com/xabier/github-minihowto
+```
+
+Al volver a revisar los repositorios declarados verás lo siguiente:
+
+```shell
+$ git remote -v
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (fetch)
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (push)
+upstream https://github.com/xabier/github-minihowto (fetch)
+upstream https://github.com/xabier/github-minihowto (push)
+```
 
 
 
