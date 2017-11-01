@@ -5,13 +5,13 @@
 * [Superfast](#Superfast)
 * [Paso a Paso](#paso-a-paso)
     * [1. Instalar y configurar Git y Retext y crear cuenta en Github](#1.-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
-    * [2. Forkear y clonar este repositorio](##forkear-y-clonar-este-repositorio)
-    * [3. Editar archivos y realizar cambios](##editar-archivos-y-realizar-cambios)
-    * [4. Actualizar cambios en el servidor remoto](##actualizar-cambios-en-el-servidor-remoto)
-    * [5. Tu primer Pull Request](##tu-primer-pull-request)
-    * [6. Trabajar en Ramas](##trabajar-en-ramas)
-    * [7. Actualizar tus repositorios locales](##actualizar-tus-repositorios-locales)
-* [Personas que están aprendido con este tutorial](#personas-que-estan-aprendido-con-este-tutorial)
+    * [2. Forkear y clonar este repositorio](#2-forkear-y-clonar-este-repositorio)
+    * [3. Editar archivos y realizar cambios](# 3-editar-archivos-y-realizar-cambios)
+    * [4. Actualizar cambios en el servidor remoto](# actualizar-cambios-en-el-servidor-remoto)
+    * [5. Tu primer Pull Request](# 5.-tu-primer-pull-request)
+    * [6. Trabajar en Ramas](#6.-trabajar-en-ramas)
+    * [7. Actualizar tus repositorios locales](#7.-actualizar-tus-repositorios-locales)
+* [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
 * [Referencias](#referencias)
 
 # Superfast
@@ -306,7 +306,7 @@ $ git checkout master       # para estar seguros de estar en la rama maestra
 $ git merge upstream/master # con esto fusionamos nuestro master local con el original
 ```
 
-# Personas que están aprendido con este tutorial
+# Personas que están aprendiendo con este tutorial
 
 * Xabier
 
