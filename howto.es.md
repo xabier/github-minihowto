@@ -198,7 +198,9 @@ A partir de aquí entrarás en una fase de revisión o discusión del PR, puede 
 
 ## 6. Trabajar en Ramas
 
-Si en lugar de actualizar los cambios directamente en master queremos crear una rama, actualizar y sólo posteriormente fusionar o actualizar los cambios en la rama maestra (master), entonces, primero tenemos que crear una rama:
+Hasta ahora has modificado los archivos de la carpeta original de tu fork, lo que se llama rama maestra o master. Sin embargo, también puedes trabajar sobre una versión temporal que tenga un nombre propio y que recoja todo un conjunto de cambios. A esto se le llama una rama. Por ejemplo podrías querer actualizar todas las capturas de pantalla de este tutorial. Puedes crear una rama e introducir las nuevas capturas. Cuando terminas de realizar los cambios que desees puedes fusionarla (merge) con la versión en la rama maestra.
+
+Primero tenemos que crear una rama:
 
 ```shell
 $ git checkout -b NOMBRE_RAMA
