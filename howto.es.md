@@ -156,7 +156,15 @@ Ahora deberías de poder ver una imagen similar a esta:
 
 ![Imagen de este documento abierto en Retext](img/retext.png)
 
-Realizas cambios (por ejemplo puedes añadir tu nombre al final del archivo), los guardas con el editor y luego avisas a git de que ha realizado cambios en ese archivo:
+Realizas cambios (por ejemplo puedes añadir tu nombre al final del archivo) y los guardas con el editor.
+
+Ahora podemos usar un comando de git muy socorrido, porque nos ayuda saber cual es la situación actual de cambios:
+
+```shell
+$ git status
+```
+
+Ahora vas a avisar a git de que has realizado cambios en ese archivo:
 
 ```shell
 $ git add howto.es.md
@@ -196,20 +204,28 @@ Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mej
 
 
 ### Paso 1
+
+Vete al repositorio de tu fork en ```https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto``` (recuerda sustituir tu nombre de usuario) y pulsa el botón ```New pull request``` tal y como aparece en esta imagen:
+
 ![Nueva pull request en GitHub](img/newpullrequest.png)
 
 
 ### Paso 2
+
+Ahora ya puedes crear el Pull Request pulsando el botón verde que pone ```Create pull request```
 
 ![Crear pull request en GitHub](img/createpullrequest.png)
 
 
 ### Paso 3
 
+Ahora sólo te queda abrir un hilo en el que podrás añadir más comentarios si fueran necesarios, sino puedes dejar todo en blaco y pulsar directamente el botón ```Open pull request``` que se muestra en esta imagen:
+
 ![Open pull request en GitHub](img/openpullrequest.png)
 
+A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: Enhorabuena! 
 
-A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: Enhorabuena!
+Podrás ver las [estadísticas de contribución aquí y encontrar tus contribuciones](https://github.com/xabier/github-minihowto/graphs/contributors).
 
 ## 6. Trabajar en Ramas
 
@@ -241,12 +257,6 @@ $ git merge NOMBRE_RAMA
 ```
 
 Para no acumular ramas es recomendable borrarlas una vez esten completadas:
-
-```shell
-$ git branch -d NOMBRE_RAMA
-```
-
-Ahora vamos a añadir el repositorio original como upstream:
 
 ```shell
 $ git branch -d NOMBRE_RAMA
