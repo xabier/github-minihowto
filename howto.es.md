@@ -31,6 +31,7 @@ $ git remote -v             # comprobar repositorios remotos declarados
 $ git remote add upstream URL_ORIGINAL # añadir repositorio original 
 $ git fetch upstream        # actualizar los cambios del repo original
 $ git merge upstream/master # con esto fusionamos nuestro master local con el original
+$ git status                # comprueba el estado de tus cambios y ramas
 ```
 
 
@@ -42,6 +43,7 @@ $ git pull origin master    # actualizar el repositorio local con el remoto
 $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
+$ git status                # comprueba el estado de tus cambios y ramas
 ```
 
 ## En Branch con acceso al repositorio original sin permisos en Master
@@ -56,7 +58,7 @@ $ git push origin RAMA      # subir los cambios al repositorio externo
 $ git checkout master       # cambiar a master
 $ git merge RAMA            # actualizar master con los cambios de la rama
 $ git branch -d NOMBRE_RAMA # borrar rama
-
+$ git status                # comprueba el estado de tus cambios y ramas
 ```
 
 
@@ -188,10 +190,7 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original. 
 
-A partir de aquí podrás entrarás en una fase de discusión del PR, puede que te pida que hagas más cambios, o corregir errores. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile:
-
-FALTA ESPECIFICAR CÓMO SE ACTUALIZAN LOS CAMBIOS TIRANDO DIRECTAMENTE DE FORK A MASTER.
-
+A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: Enhorabuena!
 
 ## 6. Trabajar en Ramas
 
@@ -233,7 +232,6 @@ $ git branch -d NOMBRE_RAMA
 ```
 
 
-
 ## 7. Actualizar o sincronizar tus repositorios locales
 
 Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local. Con este comando actualizarás tu repositorio local con el repositorio master de github
@@ -244,7 +242,7 @@ $ git pull origin master
 
 Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 1. actualizar tu fork con el original mio, 2. actualizar tu copia en local con el original
 
-Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local.  
+Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local.
 
 ### 7.a. Sincronizar tu fork en github y luego en local
 
@@ -305,6 +303,9 @@ Pero aún no has fusionado tu repositorio local con las actualizaciones del orig
 $ git checkout master       # para estar seguros de estar en la rama maestra
 $ git merge upstream/master # con esto fusionamos nuestro master local con el original
 ```
+
+También podrías ejectuar el comando ```git pull upstream```. Básicamente el comando ```pull = fetch + merge``` por lo que te ahorras un paso, pero entonces perderías los cambios que has realizado en local porque ```pull``` los sobre-escribe, de ahí que se recomiende hacer ```fetch``` para actualizar y poder seguir trabajando sin perder los cambios en local. Esto es particularmente interesante si trabajas con ramas.
+
 
 # Personas que están aprendiendo con este tutorial
 
