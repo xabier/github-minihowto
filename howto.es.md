@@ -4,13 +4,13 @@
 
 * [Superfast](#Superfast)
 * [Paso a Paso](#paso-a-paso)
-    * [1. Instalar y configurar git y retext y crear cuenta en github](#instalar-git)
-    * [2. Forkear y clonar este repositorio](#forkear-y-clonar-este-repositorio)
-    * [3. Editar archivos y realizar cambios](#editar-archivos-y-realizar-cambios)
-    * [4. Actualizar cambios en el servidor remoto](#actualizar-cambios-en-el-servidor-remoto)
-    * [5. Tu primer Pull Request](#tu-primer-pull-request)
-    * [6. Trabajar en Ramas](#trabajar-en-ramas)
-    * [7. Actualizar tus repositorios locales](#actualizar-tus-repositorios-locales)
+    * [1. Instalar y configurar Git y Retext y crear cuenta en Github](#1.-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
+    * [2. Forkear y clonar este repositorio](##forkear-y-clonar-este-repositorio)
+    * [3. Editar archivos y realizar cambios](##editar-archivos-y-realizar-cambios)
+    * [4. Actualizar cambios en el servidor remoto](##actualizar-cambios-en-el-servidor-remoto)
+    * [5. Tu primer Pull Request](##tu-primer-pull-request)
+    * [6. Trabajar en Ramas](##trabajar-en-ramas)
+    * [7. Actualizar tus repositorios locales](##actualizar-tus-repositorios-locales)
 * [Personas que están aprendido con este tutorial](#personas-que-estan-aprendido-con-este-tutorial)
 * [Referencias](#referencias)
 
@@ -71,10 +71,14 @@ No te asustes con la complejidad del diagrama. Iremos paso a paso y al final del
 
 Aunque ahora mismo el diagrama tenga demasiado detalle para ti que acabas de empezar, podemos comenzar a usarlo para comprender la lógica básica de trabajar con Git y con Github. 
 
-La idea fundamental que captura el diagrama es que en Git y en Github trabajamos con repositorios de documentos (que fundamentalmente contienen carpetas y documentos de texto). Para simplicarlo todo imaginemos que sólo hay un documento. Las líneas horizontales representan la historia de de este repositorio (p.e. las diferentes versiones de un documento, cada vez que modificamos algo en un documento se creará una nueva versión y nos deslizamos hacia la derecha en la líneas horizontales). Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora: la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. Después existirá una versión (la última línea, discontínua) que está en tu ordenador cada vez que abras el editor de textos ```retext``` y guardas los cambios realizados. Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio o otro de órden superior. Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama. 
+La idea fundamental que captura el diagrama es que en Git y en Github trabajamos con repositorios de documentos (que fundamentalmente contienen carpetas y documentos de texto). Para simplicarlo todo imaginemos que sólo hay un documento. Las líneas horizontales representan la historia de de este repositorio (p.e. las diferentes versiones de un documento, cada vez que modificamos algo en un documento se creará una nueva versión y nos deslizamos hacia la derecha en la líneas horizontales). 
+
+Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora: la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. Después existirá una versión (la última línea, discontínua) que está en tu ordenador cada vez que abras el editor de textos ```retext``` y guardas los cambios realizados. Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio o otro de órden superior. 
+
+Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama. 
 
 
-## 1. Instalar y configurar git y retext y crear cuenta en github
+## 1. Instalar y configurar Git y Retext y crear cuenta en Github
 
 Instala git y retext en Ubuntu con el siguiente comando:
 
@@ -169,7 +173,7 @@ El texto entrecomillado es el mensaje con el que se guardarán dichos cambios ex
 
 ## 4. Actualizar cambios en el servidor remoto
 
-Lo que queremos hacer ahora es empujar (push) nuestros cambios en local (en nuestro ordenador) a la rama maestra (master) que está en nuestro repositorio forkeado en github, para eso hacemos:
+Lo que queremos hacer ahora es empujar (```push```) nuestros cambios en local (en nuestro ordenador) a la rama maestra (```master```) que está en nuestro repositorio forkeado en github, para eso hacemos:
 
 ```shell
 $ git push origin master
@@ -184,7 +188,7 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original. 
 
-A partir de aquí podrás entrarás en una fase de discusión del PR, puede que te pida que hagas más cambios, o corregir errores.
+A partir de aquí podrás entrarás en una fase de discusión del PR, puede que te pida que hagas más cambios, o corregir errores. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile:
 
 FALTA ESPECIFICAR CÓMO SE ACTUALIZAN LOS CAMBIOS TIRANDO DIRECTAMENTE DE FORK A MASTER.
 
