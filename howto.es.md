@@ -27,6 +27,10 @@ $ git add *                 # añadir docs modificados a Staging
 $ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin master    # subir los cambios al repositorio master
                             # Solicitar PR al repo original
+$ git remote -v             # comprobar repositorios remotos declarados
+$ git remote add upstream URL_ORIGINAL # añadir repositorio original 
+$ git fetch upstream        # actualizar los cambios del repo original
+$ git merge upstream/master # con esto fusionamos nuestro master local con el original
 ```
 
 
@@ -178,7 +182,11 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 ## 5. Tu primer Pull Request
 
-Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork.
+Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original. 
+
+A partir de aquí podrás entrarás en una fase de discusión del PR, puede que te pida que hagas más cambios, o corregir errores.
+
+FALTA ESPECIFICAR CÓMO SE ACTUALIZAN LOS CAMBIOS TIRANDO DIRECTAMENTE DE FORK A MASTER.
 
 
 ## 6. Trabajar en Ramas
@@ -214,15 +222,90 @@ Para no acumular ramas es recomendable borrarlas una vez esten completadas:
 $ git branch -d NOMBRE_RAMA
 ```
 
+Ahora vamos a añadir el repositorio original como upstream:
 
-## 7. Actualizar tus repositorios locales
+```shell
+$ git branch -d NOMBRE_RAMA
+```
 
-Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local.
+
+
+## 7. Actualizar o sincronizar tus repositorios locales
+
+Si hay cambios en los servidores remotos y tienes que actualizar tu repositorio local. Con este comando actualizarás tu repositorio local con el repositorio master de github
 
 ```shell
 $ git pull origin master
 ```
 
+Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 1. actualizar tu fork con el original mio, 2. actualizar tu copia en local con el original
+
+Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local.  
+
+### 7.a Sincronizar tu fork en github y luego en local
+
+Lo que tienes que hacer para sincronizar (actualizar tu repositorio) tu fork con el original es ir a tu Fork y realizar un Pull Request en la dirección original --> fork. Para debes realizar los siguientes pasos:
+
+1. Haz click en ```Pull Requestes```
+2. Cambia la base, por defecto Github considerará que los PR se hacen de tu fork al original, pero lo que queremos hacer es justamente lo contrario para poder actualizar nuestro repositorio forkeado. Así que haz click en ```switching the base```
+3. Haz click en ```Create Pull Request``` y luego en ```Send Pull Request```
+4. Baja hacia abajo para hacer ```Merge```
+
+Ya tienes tu repositorio fork actualizado con el original. Ahora, para actualizar tu repositorio local, basta con que hagas lo siguiente:
+
+```shell
+$ git pull origin master
+```
+
+### 7.b Sincronizar repositorios desde tu PC con git
+
+Primero vamos a incluir el repositorio original (que vamos a llamar ```upstream```) como uno de los repositorios remotos. Ten en cuenta que, hasta ahora desde tu PC, sólo tienes referenciado tu Fork, no mi repositorio original. 
+
+Primero, para comprobar qué repositorios remotos tienes declarados hacemos:
+
+```shell
+$ git remote -v     # comprobar repositorios remotos declarados
+```
+El resultado que te tiene que salir es:
+
+```shell
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (fetch)
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (push)
+```
+
+Ahora metemos el repositorio original como upstream:
+
+```shell
+$ git remote add upstream https://github.com/xabier/github-minihowto
+```
+
+Al volver a revisar los repositorios declarados verás lo siguiente:
+
+```shell
+$ git remote -v
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (fetch)
+origin https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto (push)
+upstream https://github.com/xabier/github-minihowto (fetch)
+upstream https://github.com/xabier/github-minihowto (push)
+```
+
+Ahora vas a actualizar tu repositorio local con el original
+
+```shell
+$ git fetch upstream        # actualizar los cambios del repo original
+```
+
+Pero aún no has fusionado tu repositorio local con las actualizaciones del original. Para ello hacemos:
+
+```shell
+$ git checkout master       # para estar seguros de estar en la rama maestra
+$ git merge upstream/master # con esto fusionamos nuestro master local con el original
+```
+
+
+FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en:
+1. https://help.github.com/articles/configuring-a-remote-for-a-fork/
+2. https://help.github.com/articles/syncing-a-fork/
 
 
 # Personas que están aprendido con este tutorial
