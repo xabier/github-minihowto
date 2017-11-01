@@ -242,7 +242,7 @@ Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 
 
 Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local.  
 
-### 7.a Sincronizar tu fork en github y luego en local
+### 7.a. Sincronizar tu fork en github y luego en local
 
 Lo que tienes que hacer para sincronizar (actualizar tu repositorio) tu fork con el original es ir a tu Fork y realizar un Pull Request en la dirección original --> fork. Para debes realizar los siguientes pasos:
 
@@ -257,7 +257,7 @@ Ya tienes tu repositorio fork actualizado con el original. Ahora, para actualiza
 $ git pull origin master
 ```
 
-### 7.b Sincronizar repositorios desde tu PC con git
+### 7.b. Sincronizar repositorios desde tu PC con git
 
 Primero vamos a incluir el repositorio original (que vamos a llamar ```upstream```) como uno de los repositorios remotos. Ten en cuenta que, hasta ahora desde tu PC, sólo tienes referenciado tu Fork, no mi repositorio original. 
 
@@ -301,12 +301,6 @@ Pero aún no has fusionado tu repositorio local con las actualizaciones del orig
 $ git checkout master       # para estar seguros de estar en la rama maestra
 $ git merge upstream/master # con esto fusionamos nuestro master local con el original
 ```
-
-
-FALTA, CÓMO ACTUALIZAR TU FORK CON EL ORIGINAL instrucciones en:
-1. https://help.github.com/articles/configuring-a-remote-for-a-fork/
-2. https://help.github.com/articles/syncing-a-fork/
-
 
 # Personas que están aprendido con este tutorial
 
