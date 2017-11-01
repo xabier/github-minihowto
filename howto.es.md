@@ -314,6 +314,7 @@ También podrías ejectuar el comando ```git pull upstream```. Básicamente el c
 # Personas que están aprendiendo con este tutorial
 
 * Xabier
+* Vzy
 
 # Referencias
 
