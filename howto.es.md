@@ -192,7 +192,22 @@ Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que h
 
 ## 5. Tu primer Pull Request
 
-Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original. 
+Ahora vamos a realizar tu primer Pull Request o PR: pedir que incorporen tus mejoras en el original del que forkeaste, para que este manual quede actualizado con los cambios que has realizado en tu fork. Si visitas tu repositorio forkeado verás que aparece un botón que te permitirá hacer le PR al original en tres pasos.
+
+
+### Paso 1
+![Nueva pull request en GitHub](img/newpullrequest.png)
+
+
+### Paso 2
+
+![Crear pull request en GitHub](img/createpullrequest.png)
+
+
+### Paso 3
+
+![Open pull request en GitHub](img/openpullrequest.png)
+
 
 A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: Enhorabuena!
 
