@@ -197,6 +197,7 @@ La propia línea de comandos te pedirá tu nombre de usuario y tu password en gi
 
 Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado.
 
+Te aconsejo que re-visites el diagrama para revisar los pasos que has realizado hasta ahora.
 
 ## 5. Tu primer Pull Request
 
@@ -223,7 +224,7 @@ Ahora sólo te queda abrir un hilo en el que podrás añadir más comentarios si
 
 ![Open pull request en GitHub](img/openpullrequest.png)
 
-A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: Enhorabuena! 
+A partir de aquí entrarás en una fase de revisión o discusión del PR, puede que te pida que hagas más cambios, o corregir errores, o nada. En un momento dado aceptaré tu PR y habrás contribuído satisfactoriamente a este manual :smile: **¡Enhorabuena!**
 
 Podrás ver las [estadísticas de contribución aquí y encontrar tus contribuciones](https://github.com/xabier/github-minihowto/graphs/contributors).
 
@@ -237,7 +238,9 @@ Primero tenemos que crear una rama:
 $ git checkout -b NOMBRE_RAMA
 ```
 
-Y para subir (empujar, push) la rama al repositorio remoto hacemos:
+Ahora realizas los cambios que correspondan en los archivos que quieras. Por ejemplo podrías añadir nuevos archivos a la carpeta ```img/```.
+
+Ahora para subir (empujar, push) la rama con sus cambios al repositorio remoto hacemos:
 
 ```shell
 $ git push origin NOMBRE_RAMA
