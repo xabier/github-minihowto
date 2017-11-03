@@ -1,4 +1,10 @@
+Bienvenida/o, este es un breve pero intenso manual para introducirte en el mundo del código colaborativo a través de tres herramientas básicas: la red social [GitHub](https://github.com), la tecnología Git y el lenguaje de marcas Markdown (que usaremos a través del editor Retext).
 
+Lo que aprenderás con este manual no es más que la punta del Iceberg de un mundo tan complejo y sofisticado como maravilloso y estimulante. Con estos primeros pasos podrás romper la barrera de acceso más dura a este mundo del software y los códigos colaborativos a través de la tecnología git.
+
+Este es el fruto de mi propio aprendizaje y no encontré ninguna guía que pudiera acompañarme en los primero y engorroso pasos. Espero que te sirva de ayuda y que podamos mojorarla conjuntamente :) 
+
+Este manual está pensado precisamente para eso, para practicar con el pripio manual y colaborar con él. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo serás capaz de contribuir a este manual y cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
 
 # Índice
 
@@ -165,6 +171,20 @@ Ahora podemos usar un comando de git muy socorrido, porque nos ayuda saber cual 
 ```shell
 $ git status
 ```
+
+La terminal debería de darte la siguiente información:
+
+```
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   howto.es.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+Lo que te está indicando Git es que has realizado cambios que no has incluido aún en el fichero de referencia o control de cambios (llamado ```indez``` o ```staging```) y que no te has "comprometido" con ningún cambio, que no los has registrado o guardado en Git.
 
 Ahora vas a avisar a git de que has realizado cambios en ese archivo:
 
