@@ -2,9 +2,9 @@
 
 # Índice
 
-* [Chuleta](#chuleta)
+* [Referencia rápida](#referencia-rapida)
 * [Paso a Paso](#paso-a-paso)
-    * [1. Instalar y configurar Git y Retext y crear cuenta en Github](#1-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
+    * [1. Instalar y configurar Git y Retext y crear una cuenta en Github](#1-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
     * [2. Forkear y clonar este repositorio](#2-forkear-y-clonar-este-repositorio)
     * [3. Editar archivos y realizar cambios](#3-editar-archivos-y-realizar-cambios)
     * [4. Actualizar cambios en el servidor remoto](#4-actualizar-cambios-en-el-servidor-remoto)
@@ -14,7 +14,7 @@
 * [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
 * [Referencias](#referencias)
 
-# Chuleta
+# Referencia rápida
 
 Puedes saltar esta sección, sirve de referencia una vez hayas realizado todos los pasos del tutorial.
 
@@ -79,10 +79,12 @@ Para el caso que nos ocupa existen cuatro versiones fundamentales de este docume
 
 Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio o otro de órden superior. 
 
-Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama. 
+Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama.
+
+**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, consola o terminal. La virtud de este tutorial (como muchos otros) es que puede cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas ```Ctrl+Shift+v``` en lugar del más común ```Ctrl+v``` . Además ten en cuenta que el símbolo del dolar ```$``` indica que estás en la terminal, no lo tienes que copiar y no importa que copies y pegues las cadenas que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla (```#```) no se van a ejecutar, la línea de comandos lo ignora.
 
 
-## 1. Instalar y configurar Git y Retext y crear cuenta en Github
+## 1. Instalar y configurar Git y Retext y crear una cuenta en Github
 
 Instala git y retext en Ubuntu con el siguiente comando:
 
