@@ -16,7 +16,7 @@
 
 # Referencia rápida
 
-Puedes saltar esta sección, sirve de referencia una vez hayas realizado todos los pasos del tutorial.
+Puedes saltar esta sección, sirve de referencia rápida (a modo de chuleta) una vez hayas realizado todos los pasos del tutorial.
 
 
 ## En Branch y Fork sin acceso a repositorio original
@@ -67,7 +67,7 @@ $ git status                # comprueba el estado de tus cambios y ramas
 
 # Paso a paso
 
-A continuación te muestro un diagrama con los pasos que vamos a ir dando en el turorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y al final del tutorial te servirá como referencia para ordenar todas las acciones que vamos a realizar. En el diagrama diferenciamos tres espacios de trabajo: arriba del todo mi ordenador, abajo del todo el tuyo, en medio GitHub, donde diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
+A continuación te muestro un diagrama con los pasos que vamos a ir dando en el turorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y al durante del tutorial te servirá como referencia para ordenar todas las acciones que vamos a realizar. En el diagrama diferenciamos tres espacios de trabajo: arriba del todo mi ordenador, abajo del todo el tuyo, en medio GitHub, donde diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
 
 ![Diagrama de flujo y acciones de este tutorial](img/diagram-git-github.png)
 
@@ -81,12 +81,12 @@ Las líneas diagonales que salen de las horizontales para volver a juntarse con 
 
 Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama.
 
-**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, consola o terminal. La virtud de este tutorial (como muchos otros) es que puede cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas ```Ctrl+Shift+v``` en lugar del más común ```Ctrl+v``` . Además ten en cuenta que el símbolo del dolar ```$``` indica que estás en la terminal, no lo tienes que copiar y no importa que copies y pegues las cadenas que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla (```#```) no se van a ejecutar, la línea de comandos lo ignora.
+**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones, está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que puede cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas ```Ctrl+Shift+v``` en lugar del más común ```Ctrl+v``` . Además ten en cuenta que el símbolo del dolar ```$``` indica que estás en la terminal, no lo tienes que copiar y no importa que copies y pegues las cadenas que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla (```#```) no se van a ejecutar, la línea de comandos lo ignora.
 
 
 ## 1. Instalar y configurar Git y Retext y crear una cuenta en Github
 
-Instala git y retext en Ubuntu con el siguiente comando:
+Instala Git y Retext en Ubuntu con el siguiente comando:
 
 ```shell
 $ sudo apt-get install git-all  # Instalar git
@@ -112,7 +112,7 @@ $ git config --global user.email "TU_CORREO_ELECTRONICO"
 Ahora creamos una carpeta donde vamos a almacenar todos los repositorios con los que trabajemos a partir de ahora, para crearla directamente en la home:
 
 ```shell
-$ cd                    # Volver a Home
+$ cd                    # Volver a Home (directorio raíz de la usuaria)
 $ mkdir repos-git       # crear directorio o carpeta "repos-git"
 ```
 
@@ -199,7 +199,7 @@ La propia línea de comandos te pedirá tu nombre de usuario y tu password en gi
 
 Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado.
 
-Te aconsejo que re-visites el diagrama para revisar los pasos que has realizado hasta ahora.
+Te aconsejo que re-visites el diagrama para identificar los pasos que has realizado hasta ahora, ya has avanzado mucho y podrás ver cómo se relacionan los diferentes niveles en el diagrama. También debería de ser capaz de identificar los diferentes comandos con las diferentes acciones del diagrama.
 
 ## 5. Tu primer Pull Request
 
@@ -230,14 +230,29 @@ A partir de aquí entrarás en una fase de revisión o discusión del PR, puede 
 
 Podrás ver las [estadísticas de contribución aquí y encontrar tus contribuciones](https://github.com/xabier/github-minihowto/graphs/contributors).
 
+Es un buen momento para volver al diagrama y revisar una vez más estos últimos pasos, y los siguientes, porque vamos a entrar a trabajar en ramas que en el diagrama verás como vias paralelas que vuelven a juntarse con las líneas principales, también llamadas ramas maestra o ```master```.
+
+
 ## 6. Trabajar en Ramas
 
-Hasta ahora has modificado los archivos de la carpeta original de tu fork, lo que se llama rama maestra o master. Sin embargo, también puedes trabajar sobre una versión temporal que tenga un nombre propio y que recoja todo un conjunto de cambios. A esto se le llama una rama. Por ejemplo podrías querer actualizar todas las capturas de pantalla de este tutorial. Puedes crear una rama e introducir las nuevas capturas. Cuando terminas de realizar los cambios que desees puedes fusionarla (merge) con la versión en la rama maestra.
+Hasta ahora has modificado los archivos de la carpeta original de tu fork, lo que se llama rama maestra o master. Sin embargo, también puedes trabajar sobre una versión temporal que tenga un nombre propio y que recoja todo un conjunto de cambios. A esto se le llama una rama. Por ejemplo podrías querer actualizar todas las capturas de pantalla de este tutorial. Puedes crear una rama e introducir las nuevas capturas, ir añadiendo commits a esa rama. Durante este tiempo puede que alguien modifique el documento, pero con suerte tu rama no se ve afectada porque sólo estabas actualizando las capturas de pantalla. Cuando terminas de realizar los cambios puedes fusionar la rama (merge) con la versión en la rama maestra, tanto en local como en el repositorio original a través de un PR que incluirá todas las modificaciones que hayas realizado en tu rama. Si no hay conflictos la nueva rama podrá contribuir directamente al repositorio y la rama (o tronco) ```master```.
 
-Primero tenemos que crear una rama:
+Para empezar primero tenemos que crear una rama, tendrás que escoger el nombre de la rama que vas a crear:
 
 ```shell
 $ git checkout -b NOMBRE_RAMA
+```
+
+Con este comando no sólo hemos creado la rama sino que nos hemos movido a ella. Todos los archivos que editemos de ahora en adelante, todos los cambios, se guardarán sólo dentro de esta rama. Es importante saber en qué rama estamos trabajando en cada momento, por lo que es conveniento ejectuar el comando ```git status```:
+
+```shell
+$ git status
+```
+Y debería de darte la siguiente salida:
+
+```shell
+On branch NOMBRE_RAMA
+nothing to commit, working directory clean
 ```
 
 Ahora realizas los cambios que correspondan en los archivos que quieras. Por ejemplo podrías añadir nuevos archivos a la carpeta ```img/```.
@@ -280,7 +295,7 @@ Lo que no hemos conseguido con el comando anterior son dos cosas fundamentales: 
 
 Existen dos vías para resolver este problema: a) primero actualizar o sincronizar tu fork en github y luego descargar en local, o, b) hacerlo directamente en local.
 
-### 7.a. Sincronizar tu fork en github y luego en local
+### 7.a. Sincronizar tu fork en Github y luego en local
 
 Lo que tienes que hacer para sincronizar (actualizar tu repositorio) tu fork con el original es ir a tu Fork y realizar un Pull Request en la dirección original --> fork. Para debes realizar los siguientes pasos:
 
@@ -295,9 +310,9 @@ Ya tienes tu repositorio fork actualizado con el original. Ahora, para actualiza
 $ git pull origin master
 ```
 
-### 7.b. Sincronizar repositorios desde tu PC con git
+### 7.b. Sincronizar repositorios desde tu PC con Git
 
-Primero vamos a incluir el repositorio original (que vamos a llamar ```upstream```) como uno de los repositorios remotos. Ten en cuenta que, hasta ahora desde tu PC, sólo tienes referenciado tu Fork, no mi repositorio original. 
+Primero vamos a incluir el repositorio original (que vamos a llamar ```upstream```) como uno de los repositorios remotos. Ten en cuenta que, hasta ahora desde tu PC, sólo tienes referenciado tu Fork, no mi repositorio original.
 
 Primero, para comprobar qué repositorios remotos tienes declarados hacemos:
 
