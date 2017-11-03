@@ -1,10 +1,10 @@
-Bienvenida/o, este es un breve pero intenso manual para introducirte en el mundo del código colaborativo a través de tres herramientas básicas: la red social [GitHub](https://github.com), la tecnología Git y el lenguaje de marcas Markdown (que usaremos a través del editor Retext).
+Bienvenida/o, este es un breve pero intenso manual para introducirte en el mundo del código colaborativo a través de tres herramientas básicas: la red social [GitHub](https://github.com), la tecnología Git y el lenguaje de marcas Markdown (que usaremos a través del editor Retext). La inmensa mayoría de los textos que hay en GitHub (manuales, documentos de acogida, notas, discusiones, etc.) se realizan con este lenguaje Markdown. 
 
-Lo que aprenderás con este manual no es más que la punta del Iceberg de un mundo tan complejo y sofisticado como maravilloso y estimulante. Con estos primeros pasos podrás romper la barrera de acceso más dura a este mundo del software y los códigos colaborativos a través de la tecnología git.
+Lo que aprenderás con este manual no es más que la punta del iceberg de un mundo tan complejo y sofisticado como maravilloso y estimulante. Con estos primeros pasos podrás romper la barrera de acceso más dura a este mundo que habitualmente requiere conocimientos previos que en este manual no damos por sabidos.
 
-Este es el fruto de mi propio aprendizaje y no encontré ninguna guía que pudiera acompañarme en los primero y engorroso pasos. Espero que te sirva de ayuda y que podamos mojorarla conjuntamente :) 
+Este es el fruto de mi propio aprendizaje y no encontré ninguna guía que pudiera acompañarme en los primeros y engorroso pasos. Espero que te sirva de ayuda y que podamos mojorarla conjuntamente :) 
 
-Este manual está pensado precisamente para eso, para practicar con el pripio manual y colaborar con él. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo serás capaz de contribuir a este manual y cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
+Este manual está pensado precisamente para eso, para practicar con el propio manual y colaborar con él. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo habrás contribuído a este manual de manera práctica y serás capaz de contribuir a cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
 
 # Índice
 
@@ -73,26 +73,28 @@ $ git status                # comprueba el estado de tus cambios y ramas
 
 # Paso a paso
 
-A continuación te muestro un diagrama con los pasos que vamos a ir dando en el turorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y al durante del tutorial te servirá como referencia para ordenar todas las acciones que vamos a realizar. En el diagrama diferenciamos tres espacios de trabajo: arriba del todo mi ordenador, abajo del todo el tuyo, en medio GitHub, donde diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo aparecen las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú.
+A continuación te muestro un diagrama con los pasos que vamos a ir dando en el tutorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y el diagrama te servirá como referencia para ordenar todas las acciones que vamos a realizar. 
+
+En el diagrama diferenciamos tres espacios de trabajo: arriba del todo (en rosa) mi ordenador, abajo del todo (en amarillo) el tuyo, en medio GitHub (en gris). Dentro de Github y separados por una línea discontínua blanca diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo indican las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú. Las bolitas negras con números dentro indican las acciones que realizarás en las secciones numeradas de este manual.
 
 ![Diagrama de flujo y acciones de este tutorial](img/diagram-git-github.png)
 
 Aunque ahora mismo el diagrama tenga demasiado detalle para ti que acabas de empezar, podemos comenzar a usarlo para comprender la lógica básica de trabajar con Git y con Github. 
 
-La idea fundamental que captura el diagrama es que en Git y en Github trabajamos con repositorios de documentos (que fundamentalmente contienen carpetas y documentos de texto). Para simplicarlo todo imaginemos que sólo hay un documento. Las líneas horizontales representan la historia de de este repositorio (p.e. las diferentes versiones de un documento, cada vez que modificamos algo en un documento se creará una nueva versión y nos deslizamos hacia la derecha en la líneas horizontales). 
+La idea fundamental que captura el diagrama es que en Git y en Github trabajamos con repositorios de documentos (que fundamentalmente contienen carpetas y documentos de texto). Para simplicarlo todo imaginemos que sólo hay un documento (este mismo, cuyo nombre es ```howto.es.md```). Las líneas horizontales representan la historia de de este repositorio (p.e. las diferentes versiones de un documento), cada vez que modificamos algo en un documento se creará una nueva versión y nos deslizamos hacia la derecha en la líneas horizontales. 
 
-Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora: la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. También existirá una versión (que se muestra en la última línea, discontínua) temporal en tu ordenador cada vez que abras el editor de textos ```retext```, la memoria RAM retendrá la copia de los cambios que vas realizando en el archivo. Cuando le das a guardar, esta versión se copia y modifica el archivo original. De aquí que la última "línea" que  hay en el diagrama sea discontínua (porque sólamente existe temporalmente mientras editas el texto).
+Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora (```howto.es.md```): la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. También existirá una versión (que se muestra en la última línea discontínua abajo del todo). Esta línea, que aparece dos veces, es una copia temporal en tu ordenador. Es la copia que se crea cada vez que abres el editor de textos ```retext```, la memoria RAM retendrá la copia de los cambios que vas realizando en el archivo. Cuando le das a guardar, esta versión se copia en la carpeta y modifica el archivo original. De aquí que la última "línea" que  hay en el diagrama sea discontínua (porque sólamente existe temporalmente mientras editas el texto).
 
-Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio o otro de órden superior. 
+Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio a otro de órden superior.
 
-Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones el diagrama.
+Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones del diagrama.
 
-**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones, está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que puede cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas ```Ctrl+Shift+v``` en lugar del más común ```Ctrl+v``` . Además ten en cuenta que el símbolo del dolar ```$``` indica que estás en la terminal, no lo tienes que copiar y no importa que copies y pegues las cadenas que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla (```#```) no se van a ejecutar, la línea de comandos lo ignora.
+**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, tambiné llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas ```Ctrl+Shift+v``` en lugar del más común ```Ctrl+v``` . Además ten en cuenta que el símbolo del dolar ```$``` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almoadilla  (```#```). No importa que copies y pegues las cadenas de texo que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla no se van a ejecutar, la línea de comandos los ignora.
 
 
 ## 1. Instalar y configurar Git y Retext y crear una cuenta en Github
 
-Instala Git y Retext en Ubuntu con el siguiente comando:
+Instala Git y Retext en Ubuntu con los siguientes comandos:
 
 ```shell
 $ sudo apt-get install git-all  # Instalar git
@@ -101,7 +103,7 @@ $ sudo apt-get install retext   # Instalar editor Retext
 
 `Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
 
-Si no la tiene aún [create una cuenta en github](https://github.com/join?source=login).
+Si no las tiene aún [create una cuenta en github](https://github.com/join?source=login).
 
 Usa tu nombre de usuario de GitHub para configurar la autoría de tus cambios:
 
@@ -109,13 +111,13 @@ Usa tu nombre de usuario de GitHub para configurar la autoría de tus cambios:
 $ git config --global user.name "TU_NOMBRE"
 ```
 
-Define una dirección de correo electrónico:
+Define una dirección de correo electrónico (preferiblemente la que usaste para tu cuenta de Github):
 
 ```shell
 $ git config --global user.email "TU_CORREO_ELECTRONICO"
 ```
 
-Ahora creamos una carpeta donde vamos a almacenar todos los repositorios con los que trabajemos a partir de ahora, para crearla directamente en la home:
+Ahora vas a crear una carpeta donde vas a almacenar todos los repositorios con los que trabajarás en Github a partir de ahora. Para crearla directamente en la home ejecutamos los siguientes comandos en la terminal:
 
 ```shell
 $ cd                    # Volver a Home (directorio raíz de la usuaria)
@@ -124,13 +126,13 @@ $ mkdir repos-git       # crear directorio o carpeta "repos-git"
 
 ## 2. Forkear y clonar este repositorio
 
-Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin nada que clonar tampoco es fácil. Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Estos son los pasos que vamos a dar:
+Empezar con este repositorio no es tan fácil como empezar de cero porque este repositorio no es tuyo, tú no puedes contribuir directamente aquí. Pero empezar sin un repositorio propio tampoco es fácil (ni te permite colaborar con otras personas). Así que las cosas serán un poquito más complicadas al principio pero un poco más fáciles después. Estos son los pasos que vamos a dar:
 
-Vas a crear un fork de este repositorio, un fork es una copia con la que podrás trabajar directamente, ya que este fork o copia será tuya, y en tus propio repositorio no tienes que pedir permiso a  nadie.
+a) Vas a crear un `fork` de este repositorio, un fork es una copia con la que podrás trabajar directamente, ya que este fork o copia será tuya, y en tus propio repositorio no tienes que pedir permiso a nadie.
 
 ![Hacer un fork de este proyecto](img/fork.png)
 
-Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar para ello harás:
+Ahora que ya tienes tu fork puedes clonar y descargarte el repositorio a tu ordenador y comenzar a trabajar. Para ello tienes que volver a la terminal y ejecutarás estos comandos:
 
 ```shell
 $ cd ~/repos-git        # con esto nos movemos a nuestra carpeta de repositorios
@@ -145,18 +147,20 @@ $ ls                    # lista los directorios que hay
 $ cd github-minihowto   # para moverse a la nueva carpeta
 ```
 
+También puedes abrir y editar los archivos desde el navegador de carpetas con el que seguramente estás más familiarizada.
+
 Ya estamos preparadas para editar archivos y contribuir.
 
 
 ## 3. Editar archivos y realizar cambios
 
-Vas a la carpeta que tienes en local y editas un documento cualquiera, por ejemplo 
+Volvemos a la línea de comandos. Ahora vas a editar la copia que hay en tu ordenador, del fork que has hecho en Github, de este documento `howto.es.md`. Para ello ejecutamos el siguiente comando (que básicamente le dice al programa `retext` que abra el documento): 
 
 ```shell
 $ retext howto.es.md
 ```
 
-Lo que permite Retext, a diferencia de otros editores, es ver en tiempo real cómo se formatea Markdown. Para eso tienes que activar la visualización en pantalla partida, a la izquierda verás el código de Markdown y a la derecha cómo queda visualmente. Para ello haz click en el icono siguiente y activa la opción ```live preview``` que sale cuando le das al botón desplegable:
+Como verás, Retext es un editor de textos, más sencillo que LibreOffice o Word. Pero es un editor de texto plano. Lo que permite Retext, a diferencia de otros editores de texto plano (sin formatear), es ver en tiempo real cómo se formatea Markdown. Para eso tienes que activar la visualización en pantalla partida, a la izquierda verás el código de Markdown y a la derecha cómo queda visualmente. Para ello haz click en el icono siguiente y activa la opción ```live preview``` que sale cuando le das al botón desplegable:
 
 ![Preview Retext](img/retext-preview.png)
 
@@ -164,9 +168,9 @@ Ahora deberías de poder ver una imagen similar a esta:
 
 ![Imagen de este documento abierto en Retext](img/retext.png)
 
-Realizas cambios (por ejemplo puedes añadir tu nombre al final del archivo) y los guardas con el editor.
+Ya puedes comenzar a editar el texto. Te propongo que comiences por una edición muy sencilla: incluir tu nombre al final de este documento. Añade tu nombre, precedido del símobolo del asterisco ```*``` debajo del último de la fila y cierra la aplicación ```Retext```.
 
-Ahora podemos usar un comando de git muy socorrido, porque nos ayuda saber cual es la situación actual de cambios:
+Ahora podemos usar un comando de git muy socorrido, porque nos ayuda a saber cuál es la situación actual de cambios:
 
 ```shell
 $ git status
@@ -184,7 +188,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
-Lo que te está indicando Git es que has realizado cambios que no has incluido aún en el fichero de referencia o control de cambios (llamado ```indez``` o ```staging```) y que no te has "comprometido" con ningún cambio, que no los has registrado o guardado en Git.
+Lo que te está indicando Git es que has realizado cambios que no has incluido aún en el fichero de referencia o control de cambios (llamado ```HEAD``` o ```staging```) y que no te has "comprometido" con ningún cambio, que no los has registrado o guardado en Git.
 
 Ahora vas a avisar a git de que has realizado cambios en ese archivo:
 
@@ -192,13 +196,15 @@ Ahora vas a avisar a git de que has realizado cambios en ese archivo:
 $ git add howto.es.md
 ```
 
-Si has modificado varios documentos puedes añadir todos a la vez con:
+Si has modificado varios documentos puedes añadir todos a la vez con el comando:
 
 ```shell
 $ git add *
 ```
 
-Con esto lo que hemos conseguido es añadir los cambios al Index o Staging, que es, como el nombre indica, el índice de los archivos modificados, pero aún no hemos "guardado" esos cambios. Para eso tenemos que realizar un commit:
+**Nota**: El símbolo del asterisco se utiliza en la línea de comandos como una variable que cubre todas las posibilidades, osea para indicarlo todo, usalo con mucha precaución.
+
+Con esto lo que hemos conseguido es añadir los cambios a `HEAD` o `staging`, que es el índice de los archivos modificados, pero aún no hemos "guardado" esos cambios. Para eso tenemos que realizar un commit:
 
 ```shell
 $ git commit -m "He añadido mi nombre en la lista"
@@ -215,9 +221,9 @@ Lo que queremos hacer ahora es empujar (```push```) nuestros cambios en local (e
 $ git push origin master
 ```
 
-La propia línea de comandos te pedirá tu nombre de usuario y tu password en github.
+La propia línea de comandos te pedirá tu nombre de usuario y tu password en Github.
 
-Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado.
+Enhorabuena, acabas de actualizar tu repositorio en Github con los cambios que has realizado. Puedes visitarlos en la siguiente dirección web: ```https://github.com/TU_NOMBRE_DE_USUARIO/github-minihowto``` (recuerda sustituir tu nombre de usuario). Es un buen momento para que explores algunas de las múltiples características de Github: el control de versiones, los hashes o códigos de integridad de las versiones, etc.
 
 Te aconsejo que re-visites el diagrama para identificar los pasos que has realizado hasta ahora, ya has avanzado mucho y podrás ver cómo se relacionan los diferentes niveles en el diagrama. También debería de ser capaz de identificar los diferentes comandos con las diferentes acciones del diagrama.
 
@@ -255,7 +261,9 @@ Es un buen momento para volver al diagrama y revisar una vez más estos últimos
 
 ## 6. Trabajar en Ramas
 
-Hasta ahora has modificado los archivos de la carpeta original de tu fork, lo que se llama rama maestra o master. Sin embargo, también puedes trabajar sobre una versión temporal que tenga un nombre propio y que recoja todo un conjunto de cambios. A esto se le llama una rama. Por ejemplo podrías querer actualizar todas las capturas de pantalla de este tutorial. Puedes crear una rama e introducir las nuevas capturas, ir añadiendo commits a esa rama. Durante este tiempo puede que alguien modifique el documento, pero con suerte tu rama no se ve afectada porque sólo estabas actualizando las capturas de pantalla. Cuando terminas de realizar los cambios puedes fusionar la rama (merge) con la versión en la rama maestra, tanto en local como en el repositorio original a través de un PR que incluirá todas las modificaciones que hayas realizado en tu rama. Si no hay conflictos la nueva rama podrá contribuir directamente al repositorio y la rama (o tronco) ```master```.
+Hasta ahora has modificado los archivos de la carpeta original de tu fork, lo que se llama rama maestra o ```master```. Sin embargo, también puedes trabajar sobre una versión temporal que tenga un nombre propio y que recoja todo un conjunto de cambios. A esto se le llama una rama. Por ejemplo podrías querer actualizar todas las capturas de pantalla de este tutorial o crear una versión en inglés. Puedes crear una rama e introducir las nuevas capturas o traducciones al inglés, ir añadiendo commits a esa rama. Durante este tiempo puede que alguien modifique el documento, pero con suerte tu rama no se ve afectada porque sólo estabas actualizando las capturas de pantalla u otra versión en inglés que no afecta a este documento. 
+
+Cuando terminas de realizar los cambios puedes fusionar la rama (```merge```) con la versión en la rama maestra, tanto en local como en el repositorio original a través de un PR que incluirá todas las modificaciones que hayas realizado en tu rama. Si no hay conflictos la nueva rama podrá contribuir directamente al repositorio y la rama (o tronco) ```master```.
 
 Para empezar primero tenemos que crear una rama, tendrás que escoger el nombre de la rama que vas a crear:
 
@@ -377,6 +385,8 @@ $ git merge upstream/master # con esto fusionamos nuestro master local con el or
 
 También podrías ejectuar el comando ```git pull upstream```. Básicamente el comando ```pull = fetch + merge``` por lo que te ahorras un paso, pero entonces perderías los cambios que has realizado en local porque ```pull``` los sobre-escribe, de ahí que se recomiende hacer ```fetch``` para actualizar y poder seguir trabajando sin perder los cambios en local. Esto es particularmente interesante si trabajas con ramas.
 
+
+# Crear Issues
 
 # Personas que están aprendiendo con este tutorial
 
