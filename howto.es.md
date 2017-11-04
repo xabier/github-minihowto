@@ -4,7 +4,7 @@ Lo que aprenderás con este manual no es más que la punta del iceberg de un mun
 
 Este es el fruto de mi propio aprendizaje y no encontré ninguna guía que pudiera acompañarme en los primeros y engorroso pasos. Espero que te sirva de ayuda y que podamos mojorarla conjuntamente :) 
 
-Este manual está pensado precisamente para eso, para practicar con el propio manual y colaborar con él. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo habrás contribuído a este manual de manera práctica y serás capaz de contribuir a cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
+Este manual está pensado para practicar con el propio manual y colaborar con él, editando y colaborando con este mismo documento que estás leyendo. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo habrás contribuído a este manual de manera práctica y serás capaz de contribuir a cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
 
 # Índice
 
@@ -17,15 +17,14 @@ Este manual está pensado precisamente para eso, para practicar con el propio ma
     * [5. Tu primer Pull Request](#5-tu-primer-pull-request)
     * [6. Trabajar en Ramas](#6-trabajar-en-ramas)
     * [7. Actualizar tus repositorios locales](#7-actualizar-tus-repositorios-locales)
-* [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
+* [Personas que están aprendiendo con este tutorial](#personas-que-estan-aprendiendo-con-este-tutorial)
 * [Referencias](#referencias)
 
 # Referencia rápida
 
 Puedes saltar esta sección, sirve de referencia rápida (a modo de chuleta) una vez hayas realizado todos los pasos del tutorial.
 
-
-## En Branch y Fork sin acceso a repositorio original
+## Trabajando en master
 
 ```shell
                             # PRIMERO: crear fork del respositorio
@@ -38,37 +37,22 @@ $ git push origin master    # subir los cambios al repositorio master
 $ git remote -v             # comprobar repositorios remotos declarados
 $ git remote add upstream URL_ORIGINAL # añadir repositorio original 
 $ git fetch upstream        # actualizar los cambios del repo original
-$ git merge upstream/master # con esto fusionamos nuestro master local con el original
-$ git status                # comprueba el estado de tus cambios y ramas
+$ git merge upstream/master # fusionar nuestro master local con el original
+$ git status                # comprobar estado de cambios y rama actual
 ```
 
-
-## En Master con acceso al repositorio original con permisos en Master
-
-```shell
-$ git clone URL             # clonar un repositorio remoto en local
-$ git pull origin master    # actualizar el repositorio local con el remoto
-$ git add *                 # añadir docs modificados a Staging
-$ git commit -m "update"    # guardar cambios de los docs modificados
-$ git push origin master    # subir los cambios al repositorio master
-$ git status                # comprueba el estado de tus cambios y ramas
-```
-
-## En Branch con acceso al repositorio original sin permisos en Master
+## Trabajo en ramas
 
 ```shell
-$ git pull origin RAMA      # actualizar el repositorio
+$ git pull origin RAMA      # actualizar el repositorio local con RAMA remoto
 $ git checkout -b RAMA      # crear y entrar en la rama
-$ git add *                 # añadir docs modificados a Staging
-$ git commit -m "update"    # guardar cambios de los docs modificados
 $ git push origin RAMA      # subir los cambios al repositorio externo
                             # esto permite hacer un PR en GitHub
 $ git checkout master       # cambiar a master
-$ git merge RAMA            # actualizar master con los cambios de la rama
-$ git branch -d NOMBRE_RAMA # borrar rama
-$ git status                # comprueba el estado de tus cambios y ramas
+$ git merge RAMA            # actualizar la rama en la que estamos con RAMA
+$ git branch -d RAMA        # borrar rama
+$ git status                # comprobar estado de cambios y rama actual
 ```
-
 
 
 # Paso a paso
@@ -85,7 +69,7 @@ La idea fundamental que captura el diagrama es que en Git y en Github trabajamos
 
 Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora (```howto.es.md```): la que está en mi ordenador (la linea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. También existirá una versión (que se muestra en la última línea discontínua abajo del todo). Esta línea, que aparece dos veces, es una copia temporal en tu ordenador. Es la copia que se crea cada vez que abres el editor de textos ```retext```, la memoria RAM retendrá la copia de los cambios que vas realizando en el archivo. Cuando le das a guardar, esta versión se copia en la carpeta y modifica el archivo original. De aquí que la última "línea" que  hay en el diagrama sea discontínua (porque sólamente existe temporalmente mientras editas el texto).
 
-Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branche``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio a otro de órden superior.
+Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (```branch``` en inglés). Las líneas verticales son, fundamentalemente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de órden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio a otro de órden superior.
 
 Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones del diagrama.
 
