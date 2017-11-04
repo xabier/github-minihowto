@@ -6,7 +6,7 @@ Lo que aprenderás con este manual no es más que la punta del iceberg de un mun
 
 Este es el fruto de mi propio aprendizaje y no encontré ninguna guía que pudiera acompañarme en los primeros y engorroso pasos. Espero que te sirva de ayuda y que podamos mojorarla conjuntamente :)
 
-Este manual está pensado para practicar con el propio manual y colaborar con él, editando y colaborando con este mismo documento que estás leyendo. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo habrás contribuído a este manual de manera práctica y serás capaz de contribuir a cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
+Este manual está pensado para practicar con el propio manual y colaborar con él, editando y contribuyendo a este mismo documento que estás leyendo ahora. Dependiendo de tu nivel de conocimientos previos y destreza con la línea  de comandos, este recorrido de aprendizaje debería de llevarte entre una y cuatro horas intensas de trabajo. Al final del mismo habrás contribuído a este manual de manera práctica y serás capaz de contribuir a cualquier otro texto que se encuentre en Github, crear los tuyos propios y abrir y gestionar procesos de colaboración. Merece la pena.
 
 # Índice
 
@@ -60,7 +60,7 @@ $ git status                # comprobar estado de cambios y rama actual
 
 # Paso a paso
 
-A continuación te muestro un diagrama con los pasos que vamos a ir dando en el tutorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y el diagrama te servirá como referencia para ordenar todas las acciones que vamos a realizar. 
+A continuación te muestro un diagrama con los pasos que vamos a ir dando en el tutorial. No te asustes con la complejidad del diagrama. Iremos paso a paso y el diagrama te servirá como referencia para ordenar todas las acciones que vamos a realizar.
 
 En el diagrama diferenciamos tres espacios de trabajo: arriba del todo (en rosa) mi ordenador, abajo del todo (en amarillo) el tuyo, en medio GitHub (en gris). Dentro de Github y separados por una línea discontínua blanca diferenciamos el espacio de tus respositorios y del mío. Las flechas en rojo indican las acciones, archivos y repositorios que me tocan a mi, en negro lo que vas a crear y hacer tú. Las bolitas negras con números dentro indican las acciones que realizarás en las secciones numeradas de este manual.
 
@@ -76,7 +76,8 @@ Las líneas diagonales que salen de las horizontales para volver a juntarse con 
 
 Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones del diagrama.
 
-**Nota para principiantes en la terminal y la línea de comandos**: Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, tambiné llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas `Ctrl+Shift+v` en lugar del más común `Ctrl+v` . Además ten en cuenta que el símbolo del dolar `$` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almoadilla  (`#`). No importa que copies y pegues las cadenas de texo que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla no se van a ejecutar, la línea de comandos los ignora.
+**Nota para principiantes en la terminal y la línea de comandos:**
+  : Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, tambiné llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas `Ctrl+Shift+v` en lugar del más común `Ctrl+v` . Además ten en cuenta que el símbolo del dolar `$` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almoadilla  (`#`). No importa que copies y pegues las cadenas de texo que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla no se van a ejecutar, la línea de comandos los ignora.
 
 
 ## 1. Instalar y configurar Git y Retext y crear una cuenta en Github
@@ -88,7 +89,7 @@ $ sudo apt-get install git-all  # Instalar git
 $ sudo apt-get install retext   # Instalar editor Retext
 ```
 
-`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md)), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
+`Retext` nos va a servir par poder editar archivos en lenguaje Markdown (como este mismo, si necesitas una introducción conceptual a Markdown puedes consultar [esta guía introductoria a Markdown](https://github.com/xabier/escritura-colaborativa-github/blob/master/lenguajes-de-marca.md), y [aquí puedes consultar una guía de referencia rápida en castellano para la sintáxis de Markdown](http://joedicastro.com/pages/markdown.html), puedes utilizar cualquier otro editor, incluso un editor de texto plano.
 
 Si no las tiene aún [create una cuenta en github](https://github.com/join?source=login).
 
@@ -375,7 +376,8 @@ También podrías ejectuar el comando `git pull upstream`. Básicamente el coman
 
 # Referencias
 
-* Markdown 
+* Markdown
+    * http://joedicastro.com/pages/markdown.html 
 	* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 	* https://daringfireball.net/projects/markdown/syntax
 * Github
