@@ -19,8 +19,9 @@ Este manual está pensado para practicar con el propio manual y colaborar con é
     * [5. Tu primer Pull Request](#5-tu-primer-pull-request)
     * [6. Trabajar en Ramas](#6-trabajar-en-ramas)
     * [7. Actualizar o sincronizar tus repositorios locales](#7-actualizar-o-sincronizar-tus-repositorios-locales)
-* [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
 * [Referencias](#referencias)
+* [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
+
 
 # Referencia rápida
 
@@ -313,7 +314,7 @@ Existen dos vías para resolver este problema: a) primero actualizar o sincroniz
 
 Lo que tienes que hacer para sincronizar (actualizar tu repositorio) tu fork con el original es ir a tu Fork y realizar un Pull Request en la dirección original --> fork. Para debes realizar los siguientes pasos:
 
-1. Haz click en `Pull Requestes`
+1. Haz click en `Pull Request`
 2. Cambia la base, por defecto Github considerará que los PR se hacen de tu fork al original, pero lo que queremos hacer es justamente lo contrario para poder actualizar nuestro repositorio forkeado. Así que haz click en `switching the base`
 3. Haz click en `Create Pull Request` y luego en `Send Pull Request`
 4. Baja hacia abajo para hacer `Merge`
