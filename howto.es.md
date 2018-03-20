@@ -394,3 +394,4 @@ También podrías ejecutar el comando `git pull upstream`. Básicamente el coman
 * Xabier
 * Vzy
 * elaragon
+* kelete
