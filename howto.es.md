@@ -395,3 +395,4 @@ También podrías ejecutar el comando `git pull upstream`. Básicamente el coman
 * Vzy
 * elaragon
 * kelete
+* imi
