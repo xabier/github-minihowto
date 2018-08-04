@@ -424,7 +424,7 @@ $ git remote set-url origin git@github.com:TU_USUARIO/github-minihowto.git
 
 Repetimos esta operación cambiando `remote` por `upstream` en caso de que tengamos también otros servidores remotos activados (esto nos lo habrá mostrado el comando `git remote -v`)
 
-Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exijan sincronización con el servidor remoto no tendremos que meter la frase-clave de ssh más que la primera vez y podemos olvidarnos de tener que meter usuario y password cada vez :)
+Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exijan sincronización con el servidor remoto no tendremos que meter la frase-clave de ssh más que la primera vez y podemos olvidarnos de tener que meter usuario y password cada vez que hagamos `git pull` :)
 
 # Referencias
 
