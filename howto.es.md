@@ -10,17 +10,27 @@ Este manual está pensado para practicar con el propio manual y colaborar con é
 
 # Índice
 
-* [Referencia rápida](#referencia-rápida)
-* [Paso a Paso](#paso-a-paso)
-    * [1. Instalar y configurar Git y Retext y crear una cuenta en Github](#1-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
-    * [2. Forkear y clonar este repositorio](#2-forkear-y-clonar-este-repositorio)
-    * [3. Editar archivos y realizar cambios](#3-editar-archivos-y-realizar-cambios)
-    * [4. Actualizar cambios en el servidor remoto](#4-actualizar-cambios-en-el-servidor-remoto)
-    * [5. Tu primer Pull Request](#5-tu-primer-pull-request)
-    * [6. Trabajar en Ramas](#6-trabajar-en-ramas)
-    * [7. Actualizar o sincronizar tus repositorios locales](#7-actualizar-o-sincronizar-tus-repositorios-locales)
-* [Referencias](#referencias)
-* [Personas que están aprendiendo con este tutorial](#personas-que-están-aprendiendo-con-este-tutorial)
+- [Manual práctico de introducción a Git y GitHub](#manual-pr%C3%A1ctico-de-introducci%C3%B3n-a-git-y-github)
+- [Índice](#%C3%ADndice)
+- [Referencia rápida](#referencia-r%C3%A1pida)
+    - [Trabajando en master](#trabajando-en-master)
+    - [Trabajo en ramas](#trabajo-en-ramas)
+- [Paso a paso](#paso-a-paso)
+    - [1. Instalar y configurar Git y Retext y crear una cuenta en Github](#1-instalar-y-configurar-git-y-retext-y-crear-una-cuenta-en-github)
+    - [2. Forkear y clonar este repositorio](#2-forkear-y-clonar-este-repositorio)
+    - [3. Editar archivos y realizar cambios](#3-editar-archivos-y-realizar-cambios)
+    - [4. Actualizar cambios en el servidor remoto](#4-actualizar-cambios-en-el-servidor-remoto)
+    - [5. Tu primer Pull Request](#5-tu-primer-pull-request)
+        - [Paso 1](#paso-1)
+        - [Paso 2](#paso-2)
+        - [Paso 3](#paso-3)
+    - [6. Trabajar en Ramas](#6-trabajar-en-ramas)
+    - [7. Actualizar o sincronizar tus repositorios locales](#7-actualizar-o-sincronizar-tus-repositorios-locales)
+        - [7.a. Sincronizar tu fork en Github y luego en local](#7a-sincronizar-tu-fork-en-github-y-luego-en-local)
+        - [7.b. Sincronizar repositorios desde tu PC con Git](#7b-sincronizar-repositorios-desde-tu-pc-con-git)
+    - [8. Usar `ssh` en lugar de `https` para sincronizar repositorios](#8-usar-ssh-en-lugar-de-https-para-sincronizar-repositorios)
+- [Referencias](#referencias)
+- [Personas que están aprendiendo con este tutorial](#personas-que-est%C3%A1n-aprendiendo-con-este-tutorial)
 
 
 # Referencia rápida
@@ -76,20 +86,12 @@ Las líneas diagonales que salen de las horizontales para volver a juntarse con 
 
 Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones del diagrama.
 
-<<<<<<< HEAD
-**Nota para principiantes en la terminal y la línea de comandos:** Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, tambiné llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas `Ctrl+Shift+v` en lugar del más común `Ctrl+v` . Además ten en cuenta que el símbolo del dolar `$` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almoadilla  (`#`). No importa que copies y pegues las cadenas de texo que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla no se van a ejecutar, la línea de comandos los ignora. Al introducir el comando `sudo` la terminal te pedirá tu password de usuario de Ubuntu. Para evitar que alguien pueda averiguar tu contraseña o saber el número de digitos que contiene, la línea de comandos no pone los típicos astericos mientras escribes tu contraseña. Esto sucede cada vez que la terminal te pide un password (verás que sucede más de una vez durante el tutorial). Te aviso porque a menuco genera confusión y ansiedad la primera vez. Puedes aprender más sobre la terminal consultando los enlaces que hay en [la sección de referencias](#referencias).
-=======
-**Nota para principiantes en la terminal y la línea de comandos:** Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instrucciones que damos aquí son a través de la línea de comandos, también llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubuntu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas `Ctrl+Shift+v` en lugar del más común `Ctrl+v` . Además ten en cuenta que el símbolo del dólar `$` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almohadilla  (`#`). No importa que copies y pegues las cadenas de texto que explican un comando, ya que cuando van precedidas del símbolo de la almohadilla no se van a ejecutar, la línea de comandos los ignora. Puedes aprender más sobre la terminal consultando los enlaces que hay en [la sección de referencias](#referencias).
->>>>>>> 77dc8d2e55a2b3d36af787696dc347c8de74ea53
+**Nota para principiantes en la terminal y la línea de comandos:** Probablemente no seas una persona familiarizada con la línea de comandos. Todas las instruccoines que damos aquí son a través de la línea de comandos, tambiné llamada consola o terminal (que es la forma de dar órdenes a tu ordenador de manera directa, sin interfaz gráfica). Lo primero que tienes que hacer es abrir una terminal, lo encontrarás sin problemas en tu menú de aplicaciones. Está por defecto en todas las distribuciones de GNU/Linux y en Ubutu. La virtud de este tutorial (como muchos otros) es que se pueden cortar y pegar los comandos que se muestran directamente en tu terminal. Al pegar en la terminar tienes que utilizar la combinación de teclas `Ctrl+Shift+v` en lugar del más común `Ctrl+v` . Además ten en cuenta que el símbolo del dolar `$` indica que estás en la terminal, no lo tienes que copiar. En algunos comandos aparece un texto explicativo precedido del símbolo de la almoadilla  (`#`). No importa que copies y pegues las cadenas de texto que explican un comando, ya que cuando van precedidas del símbolo de la almoadilla no se van a ejecutar, la línea de comandos los ignora. Puedes aprender más sobre la terminal consultando los enlaces que hay en [la sección de referencias](#referencias).
 
 
 ## 1. Instalar y configurar Git y Retext y crear una cuenta en Github
 
-<<<<<<< HEAD
-Instala Git y Retext en Ubuntu con los siguientes comandos:
-=======
-Instala Git y Retext en Ubuntu con los siguientes comandos (al introducir el comando `sudo` la terminal te pedirá tu password de usuario de Ubuntu. Para evitar que alguien pueda averiguar tu contraseña o saber el número de dígitos que contiene, la línea de comandos no pone los típicos asteriscos mientras escribes tu contraseña):
->>>>>>> 77dc8d2e55a2b3d36af787696dc347c8de74ea53
+Instala Git y Retext en Ubuntu con los siguientes comandos (al introducir cualquier comando precedido de la orden `sudo` (que significa que el super usuario o administrador/a del sistema quien ejecuta el comendo) la terminal te pedirá tu password de usuario de Ubuntu. Para evitar que alguien pueda averiguar tu contraseña o saber el número de dígitos que contiene, la línea de comandos no pone los típicos asteriscos mientras escribes tu contraseña):
 
 ```shell
 $ sudo apt-get install git-all  # Instalar git
@@ -379,6 +381,50 @@ $ git merge upstream/master # con esto fusionamos nuestro master local con el or
 
 También podrías ejecutar el comando `git pull upstream`. Básicamente el comando `pull = fetch + merge` por lo que te ahorras un paso, pero entonces perderías los cambios que has realizado en local porque `pull` los sobre-escribe, de ahí que se recomiende hacer `fetch` para actualizar y poder seguir trabajando sin perder los cambios en local. Esto es particularmente interesante si trabajas con ramas.
 
+## 8. Usar `ssh` en lugar de `https` para sincronizar repositorios
+
+Ya has aprendido lo fundamental. Esta sección simplemente te hará la vida más cómoda a la hora de sincronizar (hacer `push`, `pull`, etc.) los repositorios locales y remotos. Hasta ahora hemos utilizado el protocolo `https` para esta tarea. Es el mismo protocolo de navegación segura por internet que utilizar tu navegador web. Sin embargo nos obliga a introducir la clave de usuario cada vez que sincronizamos en la dirección local->remoto. Repetir esta tarea es cansino y existe una manera de resolverlo: utilizar un tunel cifrado con contraseñas guardadas en local para no tener que introducir la contraseña cada vez. Es el método `ssh`.
+
+Lo primero que tienes que hacer es crear una clave ssh en tu ordenador. Se almacenan todas en el directorio `.ssh` y quizás tengas ya una creada así que vamos a comprobarlo:
+
+```shell
+$ cd ~/.ssh       # para movernos al directorio (carpeta) ssh
+$ ls              # para ver el conentido
+```
+
+Si el último comando muestra algún documento que termine en `.pub` ya tienes creada una clave y la puedes usar para sincronizarte con GitHub y puede saltarte el siguiente paso. Sino, deberás crear una clave:
+
+```shell
+$ ssh-keygen -t rsa -b 4096 -C "TU_CORREO@LOQUESEA.NET" # genera la clave
+```
+
+Te pedirá dónde guardar la clave, pulsa enter para que te la guarde en su lugar por defecto que es la carpeta `.ssh`. A continuación te pedirá un password o passphrase. Como la seguridad es muy importante tienes que escoger una buena frase-clave.
+
+Ahora queremos que el uso de ssh sea lo más automático posible para evitar tener que meter la frase-clave todo el rato. Para ello contamos con `ssh-agent` un programa que nos ayuda precisamente con eso. 
+
+```shell
+$ eval "$(ssh-agent -s)"    # Activamos el agente
+$ ssh-add ~/.ssh/id_rsa     # Añade la clave-ssh a gestionar por el agente
+```
+
+Ahora sólo falta añadir la clave a GitHub para que nos reconozca como usuario fiable y nos permita sincronizarnos. [Sigue estas instrucciones](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
+
+Ahora nos queda un último paso. Si comenzamos desde el comienzo con la sincronización con `ssh` no es ningún problema, porque al hacer el primer `clone` le diremos a Git que vamos a trabajar siempre con `ssh` y la cosa va rodada. Por ejemplo el primer clone del fork de este repositorio sería:
+
+```shell
+git clone git@github.com:TU_NOMBRE_USUARIO/github-minihowto.git
+```
+
+El problema es que hemos hecho todo con `https` hasta ahora y queremos cambiar a `ssh`. Si es el caso, vamos a la terminal, navegamos hasta la carpeta del proyecto git y ejecutamos los siguientes comandos:
+
+```shell
+$ git remote -v     # para ver cómo tenemos asociados los servidores remotos
+$ git remote set-url origin git@github.com:TU_USUARIO/github-minihowto.git
+```
+
+Repetimos esta operación cambiando `remote` por `upstream` en caso de que tengamos también otros servidores remotos activados (esto nos lo habrá mostrado el comando `git remote -v`)
+
+Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exijan sincronización con el servidor remoto no tendremos que meter la frase-clave de ssh más que la primera vez y podemos olvidarnos de tener que meter usuario y password cada vez :)
 
 # Referencias
 
@@ -388,10 +434,12 @@ También podrías ejecutar el comando `git pull upstream`. Básicamente el coman
 	* https://daringfireball.net/projects/markdown/syntax
 * Github
     * https://guides.github.com/activities/hello-world/
-* Git and Github
+* Git y Github
 	* https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 	* https://rogerdudler.github.io/git-guide/
 	* https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
+* SSH y Github
+    * https://help.github.com/articles/connecting-to-github-with-ssh/ 
 * Terminal o consola en Ubuntu:
     * http://www.ubuntu-guia.com/2009/07/comandos-basicos-de-linux.html
     * https://www.genbeta.com/linux/linux-paso-a-paso-los-cinco-comandos-para-la-terminal-que-todo-usuario-de-ubuntu-debe-conocer
