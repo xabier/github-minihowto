@@ -460,3 +460,4 @@ Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exij
 * elaragon
 * kelete
 * imi
+* carol
