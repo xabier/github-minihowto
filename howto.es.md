@@ -82,7 +82,11 @@ La idea fundamental que captura el diagrama es que en Git y en Github trabajamos
 
 Para el caso que nos ocupa existen cuatro versiones fundamentales de este documento que lees ahora (`howto.es.md`): la que está en mi ordenador (la línea superior roja), la que está en mi cuenta de github (segunda línea roja), la que vas a crear en tú dentro de Github (primera línea negra) y finalmente la que vas a tener en tu ordenador. También existirá una versión (que se muestra en la última línea discontinua abajo del todo). Esta línea, que aparece dos veces, es una copia temporal en tu ordenador. Es la copia que se crea cada vez que abres el editor de textos `retext`, la memoria RAM retendrá la copia de los cambios que vas realizando en el archivo. Cuando le das a guardar, esta versión se copia en la carpeta y modifica el archivo original. De aquí que la última "línea" que  hay en el diagrama sea discontinua (porque sólamente existe temporalmente mientras editas el texto).
 
+<<<<<<< HEAD
+Si no la tienes aún [create una cuenta en github](https://github.com/join?source=login).
+=======
 Las líneas diagonales que salen de las horizontales para volver a juntarse con ella se llaman ramas (`branch` en inglés). Las líneas verticales son, fundamentalmente, acciones orientadas descargar repositorios, o a subir o actualizar copias. En tu caso, cada vez que una flecha vaya de arriba-abajo indicará que te estas descargando algo o actualizando tus documentos con los repositorios o versiones de una línea de orden superior. Cuando la flecha vaya de abajo-arriba será que guardas un cambios o empujas un cambio de un repositorio a otro de orden superior.
+>>>>>>> fc68fdd873aa4e11d93efafe96a2b278596b958b
 
 Por ahora basta con que comprendas esta lógica fundamental y comencemos paso a paso a completar las acciones del diagrama.
 
@@ -321,6 +325,9 @@ Existen dos vías para resolver este problema: a) primero actualizar o sincroniz
 
 ### 7.a. Sincronizar tu fork en Github y luego en local
 
+<<<<<<< HEAD
+* Xabier, Carolina
+=======
 Lo que tienes que hacer para sincronizar (actualizar tu repositorio) tu fork con el original es ir a tu Fork y realizar un Pull Request en la dirección original --> fork. Para debes realizar los siguientes pasos:
 
 1. Haz click en `Pull Request`
@@ -371,6 +378,7 @@ Ahora vas a actualizar tu repositorio local con el original
 ```shell
 $ git fetch upstream        # actualizar los cambios del repo original
 ```
+>>>>>>> fc68fdd873aa4e11d93efafe96a2b278596b958b
 
 Pero aún no has fusionado tu repositorio local con las actualizaciones del original. Para ello hacemos:
 
@@ -452,3 +460,4 @@ Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exij
 * elaragon
 * kelete
 * imi
+* carol
