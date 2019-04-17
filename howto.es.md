@@ -431,6 +431,7 @@ Repetimos esta operación cambiando `remote` por `upstream` en caso de que tenga
 
 Y ya está! A partir de ahora cuando hagamos cualquiera de los comandos que exijan sincronización con el servidor remoto no tendremos que meter la frase-clave de ssh más que la primera vez y podemos olvidarnos de tener que meter usuario y password cada vez que hagamos `git pull` :)
 
+Nota luis: hace falta alguna operación que permita comprobar que se hizo correctamente. 
 # Referencias
 
 * Markdown
