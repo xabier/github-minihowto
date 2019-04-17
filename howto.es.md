@@ -283,6 +283,8 @@ nothing to commit, working directory clean
 
 Ahora realizas los cambios que correspondan en los archivos que quieras. Por ejemplo podrías añadir nuevos archivos a la carpeta `img/`.
 
+Nota Luis: antes de subir, es necesario repetir los pasos "git add" y "git commit -m"
+
 Ahora para subir (empujar, push) la rama con sus cambios al repositorio remoto hacemos:
 
 ```shell
@@ -300,6 +302,8 @@ Y desde aquí ya puedes fusionar (merge) la rama nueva a la rama maestra:
 ```shell
 $ git merge NOMBRE_RAMA
 ```
+
+Nota Luis: El merge no funsiono, la imagen del ferro que agregue no aparece en la "master" aunque si aparece en "rama_tutorial"
 
 Para no acumular ramas es recomendable borrarlas una vez estén completadas:
 
